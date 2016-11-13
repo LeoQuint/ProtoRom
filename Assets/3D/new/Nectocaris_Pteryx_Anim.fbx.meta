@@ -1,0 +1,543 @@
+fileFormatVersion: 2
+guid: 9217192213037dc4e808f2f51ef046d4
+timeCreated: 1479010014
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body1_Jnt
+    100002: body2_Jnt
+    100004: body3_Jnt
+    100006: body4_Jnt
+    100008: body5_Jnt
+    100010: body6_Jnt
+    100012: body7_Jnt
+    100014: joint10
+    100016: joint10 1
+    100018: joint11
+    100020: joint11 1
+    100022: joint12
+    100024: joint12 1
+    100026: joint18
+    100028: joint19
+    100030: joint19 1
+    100032: joint20
+    100034: joint21
+    100036: joint21 1
+    100038: joint22
+    100040: joint23
+    100042: joint23 1
+    100044: joint24
+    100046: joint25
+    100048: joint25 1
+    100050: joint26
+    100052: joint27
+    100054: joint27 1
+    100056: joint28
+    100058: joint29
+    100060: joint29 1
+    100062: joint30
+    100064: joint31
+    100066: joint31 1
+    100068: joint32
+    100070: joint33
+    100072: joint34
+    100074: joint35
+    100076: joint36
+    100078: joint37
+    100080: joint38
+    100082: joint39
+    100084: joint8
+    100086: joint9
+    100088: joint9 1
+    100090: //RootNode
+    100092: pCube1
+    400000: body1_Jnt
+    400002: body2_Jnt
+    400004: body3_Jnt
+    400006: body4_Jnt
+    400008: body5_Jnt
+    400010: body6_Jnt
+    400012: body7_Jnt
+    400014: joint10
+    400016: joint10 1
+    400018: joint11
+    400020: joint11 1
+    400022: joint12
+    400024: joint12 1
+    400026: joint18
+    400028: joint19
+    400030: joint19 1
+    400032: joint20
+    400034: joint21
+    400036: joint21 1
+    400038: joint22
+    400040: joint23
+    400042: joint23 1
+    400044: joint24
+    400046: joint25
+    400048: joint25 1
+    400050: joint26
+    400052: joint27
+    400054: joint27 1
+    400056: joint28
+    400058: joint29
+    400060: joint29 1
+    400062: joint30
+    400064: joint31
+    400066: joint31 1
+    400068: joint32
+    400070: joint33
+    400072: joint34
+    400074: joint35
+    400076: joint36
+    400078: joint37
+    400080: joint38
+    400082: joint39
+    400084: joint8
+    400086: joint9
+    400088: joint9 1
+    400090: //RootNode
+    400092: pCube1
+    4300000: pCube1
+    7400000: idle
+    7400002: swim
+    7400004: fast
+    9500000: //RootNode
+    13700000: pCube1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint30
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint30/joint31
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint39
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint39/joint31
+          1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint28
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint28/joint29
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint38
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint38/joint29
+          1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint26
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint26/joint27
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint37
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint37/joint27 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint24
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint24/joint25
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint36
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint36/joint25 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint22
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint22/joint23
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint35
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint35/joint23 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint20
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint20/joint21
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint34
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint34/joint21 1
+        weight: 1
+      - path: body1_Jnt/joint8
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1/joint11 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1/joint11 1/joint9 1
+        weight: 1
+      - path: body1_Jnt/joint18
+        weight: 1
+      - path: body1_Jnt/joint18/joint19
+        weight: 1
+      - path: body1_Jnt/joint32
+        weight: 1
+      - path: body1_Jnt/joint32/joint19 1
+        weight: 1
+      - path: body1_Jnt/joint33
+        weight: 1
+      - path: body1_Jnt/joint33/joint12
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10/joint11
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10/joint11/joint9
+        weight: 1
+      - path: pCube1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: swim
+      takeName: Take 001
+      firstFrame: 53
+      lastFrame: 86
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint30
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint30/joint31
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint39
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint39/joint31
+          1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint28
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint28/joint29
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint38
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint38/joint29
+          1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint26
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint26/joint27
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint37
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint37/joint27 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint24
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint24/joint25
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint36
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint36/joint25 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint22
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint22/joint23
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint35
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint35/joint23 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint20
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint20/joint21
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint34
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint34/joint21 1
+        weight: 1
+      - path: body1_Jnt/joint8
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1/joint11 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1/joint11 1/joint9 1
+        weight: 1
+      - path: body1_Jnt/joint18
+        weight: 1
+      - path: body1_Jnt/joint18/joint19
+        weight: 1
+      - path: body1_Jnt/joint32
+        weight: 1
+      - path: body1_Jnt/joint32/joint19 1
+        weight: 1
+      - path: body1_Jnt/joint33
+        weight: 1
+      - path: body1_Jnt/joint33/joint12
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10/joint11
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10/joint11/joint9
+        weight: 1
+      - path: pCube1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: fast
+      takeName: Take 001
+      firstFrame: 87
+      lastFrame: 124
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint30
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint30/joint31
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint39
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/body7_Jnt/joint39/joint31
+          1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint28
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint28/joint29
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint38
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/body6_Jnt/joint38/joint29
+          1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint26
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint26/joint27
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint37
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/body5_Jnt/joint37/joint27 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint24
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint24/joint25
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint36
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/body4_Jnt/joint36/joint25 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint22
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint22/joint23
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint35
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/body3_Jnt/joint35/joint23 1
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint20
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint20/joint21
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint34
+        weight: 1
+      - path: body1_Jnt/body2_Jnt/joint34/joint21 1
+        weight: 1
+      - path: body1_Jnt/joint8
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1/joint11 1
+        weight: 1
+      - path: body1_Jnt/joint8/joint12 1/joint10 1/joint11 1/joint9 1
+        weight: 1
+      - path: body1_Jnt/joint18
+        weight: 1
+      - path: body1_Jnt/joint18/joint19
+        weight: 1
+      - path: body1_Jnt/joint32
+        weight: 1
+      - path: body1_Jnt/joint32/joint19 1
+        weight: 1
+      - path: body1_Jnt/joint33
+        weight: 1
+      - path: body1_Jnt/joint33/joint12
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10/joint11
+        weight: 1
+      - path: body1_Jnt/joint33/joint12/joint10/joint11/joint9
+        weight: 1
+      - path: pCube1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

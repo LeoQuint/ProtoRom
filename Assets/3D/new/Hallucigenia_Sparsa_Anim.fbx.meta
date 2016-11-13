@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: e137db45243264246931266fd8313e9a
+timeCreated: 1479010016
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: hallucigenia
+    100002: //RootNode
+    100004: joint1
+    100006: joint10
+    100008: joint103
+    100010: joint109
+    100012: joint11
+    100014: joint12
+    100016: joint13
+    100018: joint14
+    100020: joint15
+    100022: joint16
+    100024: joint16 1
+    100026: joint16 10
+    100028: joint16 11
+    100030: joint16 12
+    100032: joint16 13
+    100034: joint16 2
+    100036: joint16 3
+    100038: joint16 4
+    100040: joint16 5
+    100042: joint16 6
+    100044: joint16 7
+    100046: joint16 8
+    100048: joint16 9
+    100050: joint17
+    100052: joint17 1
+    100054: joint17 10
+    100056: joint17 11
+    100058: joint17 12
+    100060: joint17 13
+    100062: joint17 2
+    100064: joint17 3
+    100066: joint17 4
+    100068: joint17 5
+    100070: joint17 6
+    100072: joint17 7
+    100074: joint17 8
+    100076: joint17 9
+    100078: joint18
+    100080: joint18 1
+    100082: joint18 10
+    100084: joint18 11
+    100086: joint18 12
+    100088: joint18 13
+    100090: joint18 2
+    100092: joint18 3
+    100094: joint18 4
+    100096: joint18 5
+    100098: joint18 6
+    100100: joint18 7
+    100102: joint18 8
+    100104: joint18 9
+    100106: joint19
+    100108: joint19 1
+    100110: joint19 10
+    100112: joint19 11
+    100114: joint19 12
+    100116: joint19 13
+    100118: joint19 2
+    100120: joint19 3
+    100122: joint19 4
+    100124: joint19 5
+    100126: joint19 6
+    100128: joint19 7
+    100130: joint19 8
+    100132: joint19 9
+    100134: joint2
+    100136: joint20
+    100138: joint20 1
+    100140: joint20 10
+    100142: joint20 11
+    100144: joint20 12
+    100146: joint20 13
+    100148: joint20 2
+    100150: joint20 3
+    100152: joint20 4
+    100154: joint20 5
+    100156: joint20 6
+    100158: joint20 7
+    100160: joint20 8
+    100162: joint20 9
+    100164: joint21
+    100166: joint21 1
+    100168: joint21 10
+    100170: joint21 11
+    100172: joint21 12
+    100174: joint21 13
+    100176: joint21 2
+    100178: joint21 3
+    100180: joint21 4
+    100182: joint21 5
+    100184: joint21 6
+    100186: joint21 7
+    100188: joint21 8
+    100190: joint21 9
+    100192: joint22
+    100194: joint23
+    100196: joint24
+    100198: joint25
+    100200: joint26
+    100202: joint27
+    100204: joint28
+    100206: joint29
+    100208: joint3
+    100210: joint30
+    100212: joint30 1
+    100214: joint30 2
+    100216: joint30 3
+    100218: joint30 4
+    100220: joint30 5
+    100222: joint31
+    100224: joint31 1
+    100226: joint31 2
+    100228: joint31 3
+    100230: joint31 4
+    100232: joint31 5
+    100234: joint32
+    100236: joint32 1
+    100238: joint32 2
+    100240: joint32 3
+    100242: joint32 4
+    100244: joint32 5
+    100246: joint33
+    100248: joint33 1
+    100250: joint33 2
+    100252: joint33 3
+    100254: joint33 4
+    100256: joint33 5
+    100258: joint34
+    100260: joint35
+    100262: joint4
+    100264: joint43
+    100266: joint5
+    100268: joint51
+    100270: joint59
+    100272: joint6
+    100274: joint67
+    100276: joint7
+    100278: joint75
+    100280: joint8
+    100282: joint83
+    100284: joint9
+    100286: joint91
+    100288: joint97
+    400000: hallucigenia
+    400002: //RootNode
+    400004: joint1
+    400006: joint10
+    400008: joint103
+    400010: joint109
+    400012: joint11
+    400014: joint12
+    400016: joint13
+    400018: joint14
+    400020: joint15
+    400022: joint16
+    400024: joint16 1
+    400026: joint16 10
+    400028: joint16 11
+    400030: joint16 12
+    400032: joint16 13
+    400034: joint16 2
+    400036: joint16 3
+    400038: joint16 4
+    400040: joint16 5
+    400042: joint16 6
+    400044: joint16 7
+    400046: joint16 8
+    400048: joint16 9
+    400050: joint17
+    400052: joint17 1
+    400054: joint17 10
+    400056: joint17 11
+    400058: joint17 12
+    400060: joint17 13
+    400062: joint17 2
+    400064: joint17 3
+    400066: joint17 4
+    400068: joint17 5
+    400070: joint17 6
+    400072: joint17 7
+    400074: joint17 8
+    400076: joint17 9
+    400078: joint18
+    400080: joint18 1
+    400082: joint18 10
+    400084: joint18 11
+    400086: joint18 12
+    400088: joint18 13
+    400090: joint18 2
+    400092: joint18 3
+    400094: joint18 4
+    400096: joint18 5
+    400098: joint18 6
+    400100: joint18 7
+    400102: joint18 8
+    400104: joint18 9
+    400106: joint19
+    400108: joint19 1
+    400110: joint19 10
+    400112: joint19 11
+    400114: joint19 12
+    400116: joint19 13
+    400118: joint19 2
+    400120: joint19 3
+    400122: joint19 4
+    400124: joint19 5
+    400126: joint19 6
+    400128: joint19 7
+    400130: joint19 8
+    400132: joint19 9
+    400134: joint2
+    400136: joint20
+    400138: joint20 1
+    400140: joint20 10
+    400142: joint20 11
+    400144: joint20 12
+    400146: joint20 13
+    400148: joint20 2
+    400150: joint20 3
+    400152: joint20 4
+    400154: joint20 5
+    400156: joint20 6
+    400158: joint20 7
+    400160: joint20 8
+    400162: joint20 9
+    400164: joint21
+    400166: joint21 1
+    400168: joint21 10
+    400170: joint21 11
+    400172: joint21 12
+    400174: joint21 13
+    400176: joint21 2
+    400178: joint21 3
+    400180: joint21 4
+    400182: joint21 5
+    400184: joint21 6
+    400186: joint21 7
+    400188: joint21 8
+    400190: joint21 9
+    400192: joint22
+    400194: joint23
+    400196: joint24
+    400198: joint25
+    400200: joint26
+    400202: joint27
+    400204: joint28
+    400206: joint29
+    400208: joint3
+    400210: joint30
+    400212: joint30 1
+    400214: joint30 2
+    400216: joint30 3
+    400218: joint30 4
+    400220: joint30 5
+    400222: joint31
+    400224: joint31 1
+    400226: joint31 2
+    400228: joint31 3
+    400230: joint31 4
+    400232: joint31 5
+    400234: joint32
+    400236: joint32 1
+    400238: joint32 2
+    400240: joint32 3
+    400242: joint32 4
+    400244: joint32 5
+    400246: joint33
+    400248: joint33 1
+    400250: joint33 2
+    400252: joint33 3
+    400254: joint33 4
+    400256: joint33 5
+    400258: joint34
+    400260: joint35
+    400262: joint4
+    400264: joint43
+    400266: joint5
+    400268: joint51
+    400270: joint59
+    400272: joint6
+    400274: joint67
+    400276: joint7
+    400278: joint75
+    400280: joint8
+    400282: joint83
+    400284: joint9
+    400286: joint91
+    400288: joint97
+    4300000: hallucigenia
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: hallucigenia
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

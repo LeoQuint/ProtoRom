@@ -1,0 +1,93 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 (ID=0x1381)
+    Vendor:   NVIDIA
+    VRAM:     2016 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.150 seconds
+Platform assembly: C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Leonard\Desktop\proto-master\Proto_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on ReturnToMainMenu
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 375)
+
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.644903 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 4220 -> priority: 1 
+  Thread -> id: 1b68 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.330148 ms
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4866.
+Total: 0.681396 ms (FindLiveObjects: 0.116892 ms CreateObjectMapping: 0.047327 ms MarkObjects: 0.406842 ms  DeleteObjects: 0.110334 ms)
+
+scan(Clone) (UnityEngine.SphereCollider)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+player (UnityEngine.BoxCollider)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+stopping nutrientEaten(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+scan(Clone) (UnityEngine.SphereCollider)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+player (UnityEngine.BoxCollider)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+stopping nutrientEaten(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+scan(Clone) (UnityEngine.SphereCollider)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+player (UnityEngine.BoxCollider)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+stopping nutrientEaten(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Phase 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Phase 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.702492 ms
+
+Unloading 652 unused Assets to reduce memory usage. Loaded Objects now: 528.
+Total: 2.236350 ms (FindLiveObjects: 0.023948 ms CreateObjectMapping: 0.042480 ms MarkObjects: 0.151389 ms  DeleteObjects: 2.018531 ms)
+
