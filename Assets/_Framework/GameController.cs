@@ -277,7 +277,7 @@ public class GameController : MonoBehaviour {
     {
 
         float xRng = Random.Range(player.position.x -10f ,player.position.x +5f);
-        float yRng = Random.Range(player.position.y + 12f, player.position.y + 20f);
+        float yRng = 24f;
         GameObject beam = Instantiate(lightBeam, new Vector3(xRng,yRng,0f), lightAngle) as GameObject;
        
     }

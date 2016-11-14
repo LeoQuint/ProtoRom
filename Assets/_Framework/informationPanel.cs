@@ -14,15 +14,20 @@ public class informationPanel : MonoBehaviour {
     private float m_scale = 0f;
     private Text mainText;
 
+
+    private float startingX;
+
     private int currentTip = 0;
     void Awake()
     {
         mainText = transform.FindChild("Text").GetComponent<Text>();
         mainText.gameObject.SetActive(false);
+        Debug.Log(transform.position);
+        startingX = transform.position.x;
     }
 
 	void Start () {
-        transform.localScale = new Vector3(m_scale, m_scale, m_scale);
+        //transform.localScale = new Vector3(m_scale, m_scale, m_scale);
 	}
 	
 	// Update is called once per frame
@@ -33,29 +38,46 @@ public class informationPanel : MonoBehaviour {
         }
         if (m_scalingUp)
         {
-            m_scale += m_scalingSpeed * Time.deltaTime;
-            if (m_scale >= 1f)
+            //m_scale += m_scalingSpeed * Time.deltaTime;
+            //if (m_scale >= 1f)
+            //{
+            //    m_scale = 1f;
+            //    m_scalingUp = false;
+            //    mainText.gameObject.SetActive(true);
+            //    StartCoroutine(ClosingDelay());
+            //}
+            //transform.localScale = new Vector3(m_scale, m_scale, m_scale);
+            float newX = transform.position.x + (2000f * Time.deltaTime);
+            if (transform.position.x >= 350f)
             {
-                m_scale = 1f;
+                newX = 350f;
                 m_scalingUp = false;
                 mainText.gameObject.SetActive(true);
                 StartCoroutine(ClosingDelay());
             }
-            transform.localScale = new Vector3(m_scale, m_scale, m_scale);
+            transform.position = new Vector3(newX, transform.position.y, transform.position.z);
             
         }
         if (m_scalingDown)
         {
-            m_scale -= m_scalingSpeed * Time.deltaTime;
-            if (m_scale <= 0f)
+            //m_scale -= m_scalingSpeed * Time.deltaTime;
+            //if (m_scale <= 0f)
+            //{
+            //    helpButton.SetActive(true);
+            //    m_scale = 0f;
+            //    mainText.gameObject.SetActive(false);
+            //    m_scalingDown = false;
+            //}
+            //transform.localScale = new Vector3(m_scale, m_scale, m_scale);
+            float newX = transform.position.x - (2000f * Time.deltaTime);
+            if (transform.position.x <= startingX)
             {
-                helpButton.SetActive(true);
-                m_scale = 0f;
-                mainText.gameObject.SetActive(false);
+                newX = startingX;
                 m_scalingDown = false;
+                mainText.gameObject.SetActive(false);
+                helpButton.SetActive(true);
             }
-            transform.localScale = new Vector3(m_scale, m_scale, m_scale);
-            
+            transform.position = new Vector3(newX, transform.position.y, transform.position.z);
         }
     }
     public void PopUp()

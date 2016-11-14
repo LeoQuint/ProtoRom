@@ -125,9 +125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e4e70f49dc091459c6468b3bdf3764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 12
+  angle: 9
   near: 5
-  far: 50
+  far: 110
   m:
   - {fileID: 2100000, guid: 492a47d2efd269447ab78e37877f8cc4, type: 2}
   - {fileID: 2100000, guid: 9dc2d4294b7dbfc4682ce5ac52f1bde2, type: 2}
