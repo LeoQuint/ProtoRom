@@ -65,9 +65,12 @@ public class player : MonoBehaviour {
 
     private int[] cellEatenType = new int[3];
     //public displayFollow displayCounter;
-
+    
+    private soundPlayer soundBoard;
     void Awake()
     {
+        soundBoard = GameObject.FindGameObjectWithTag("soundboard").GetComponent<soundPlayer>();
+
         proAnim = transform.FindChild("prokaryote_cell").GetComponent<Animator>();
         eukAnim = transform.FindChild("eukaryote_cell").GetComponent<Animator>();
         planAnim = transform.FindChild("planaria_B").GetComponent<Animator>();
@@ -216,6 +219,7 @@ public class player : MonoBehaviour {
     IEnumerator LoadMenu()
     {
         yield return new WaitForSeconds(delayAfterGameover);
+        soundBoard.Reset();
         SceneManager.LoadScene(0);
     }
     public void Pounce()
@@ -292,6 +296,7 @@ public class player : MonoBehaviour {
     }
     public void StartPhaseFour()
     {
+        soundBoard.Chase();
         Camera.main.GetComponent<cameraFollow>().Transition();
         fxp.PlayOnce(8);
         Debug.Log("Phase 4");

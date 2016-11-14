@@ -7,6 +7,9 @@ public class soundPlayer : MonoBehaviour {
 
     AudioSource musicAud;
 
+    public AudioClip begin;
+    public AudioClip chase;
+
     void Awake()
     {
         Cursor.visible = false;
@@ -23,5 +26,16 @@ public class soundPlayer : MonoBehaviour {
         }
         DontDestroyOnLoad(gameObject);
         musicAud = GetComponent<AudioSource>();
+    }
+
+    public void Reset()
+    {
+        musicAud.clip = begin;
+        musicAud.Play();
+    }
+    public void Chase()
+    {
+        musicAud.clip = chase;
+        musicAud.Play();
     }
 }

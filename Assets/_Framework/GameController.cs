@@ -63,7 +63,7 @@ public class GameController : MonoBehaviour {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         state = EvoState.PROKARYOTE;
-
+        
         plants = GameObject.FindGameObjectsWithTag("plant");
         for (int i = 0; i < plants.Length; i++)
         {

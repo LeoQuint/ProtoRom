@@ -7,7 +7,7 @@ public class cluster : MonoBehaviour {
     public GameObject[] cells = new GameObject[16];
 
     public GameObject shell;
-
+    public fxPlayer soundPlayer;
 
     Animator clusAnim;
     int clickCount;
@@ -47,6 +47,7 @@ public class cluster : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && gc.state == EvoState.CLUSTER)
         {
             clickCount++;
+            soundPlayer.PlayOnce(10);
             if (clickCount >= clicksBeforeSplit)
             {
                 clickCount -= clicksBeforeSplit;
@@ -54,6 +55,7 @@ public class cluster : MonoBehaviour {
                 switch (splits)
                 {
                     case 1:
+                        soundPlayer.PlayOnce(11);
                         clusAnim.SetTrigger("grow");
                         transform.FindChild("shell").transform.FindChild("eukaryote_cell_03_Anim").localPosition = new Vector3(-0.06f,0.086f,-0.1f);//BAD CODE!
                         cells[1].SetActive(true);
@@ -64,6 +66,7 @@ public class cluster : MonoBehaviour {
                         isLerpingFOV = true;
                         break;
                     case 2:
+                        soundPlayer.PlayOnce(11);
                         clusAnim.SetTrigger("grow");
                         transform.FindChild("shell").transform.FindChild("eukaryote_cell_03_Anim").localPosition = new Vector3(-0.06f, -0.027f, -0.047f);//BAD CODE!
                         transform.FindChild("shell").transform.FindChild("eukaryote_cell_03_Anim").localScale = new Vector3(0.65f, 0.65f, 0.65f);//BAD CODE!
@@ -76,7 +79,7 @@ public class cluster : MonoBehaviour {
                         isLerpingFOV = true;
                         break;
                     case 3:
-                        clusAnim.SetTrigger("grow");
+                        soundPlayer.PlayOnce(11);
                         clusAnim.SetTrigger("grow");
                         transform.FindChild("shell").transform.FindChild("eukaryote_cell_03_Anim").localPosition = new Vector3(-0.06f, -0.005f, -0.012f);//BAD CODE!
                         transform.FindChild("shell").transform.FindChild("eukaryote_cell_03_Anim").localScale = new Vector3(0.6f, 0.6f, 0.6f);//BAD CODE!
@@ -93,6 +96,7 @@ public class cluster : MonoBehaviour {
                         isLerpingFOV = true;
                         break;
                     case 4:
+                        soundPlayer.PlayOnce(11);
                         clusAnim.SetTrigger("grow");
                         cells[8].SetActive(true);
                         cells[9].SetActive(true);

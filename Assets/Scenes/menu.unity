@@ -323,7 +323,7 @@ GameObject:
   - 82: {fileID: 1047670696}
   m_Layer: 0
   m_Name: SoundBoard
-  m_TagString: Untagged
+  m_TagString: soundboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -337,7 +337,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b69064e76bca0af438c7d3ad6290d8da, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2adb54d1bbc974247bb03c2a80cdf2c2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -426,6 +426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e5a2717da0f2f4d871e22396c93a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  begin: {fileID: 8300000, guid: 2adb54d1bbc974247bb03c2a80cdf2c2, type: 3}
+  chase: {fileID: 8300000, guid: 46579f00372d6b44db78819420ab8c7a, type: 3}
 --- !u!82 &1047670696
 AudioSource:
   m_ObjectHideFlags: 0
