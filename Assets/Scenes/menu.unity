@@ -862,7 +862,7 @@ Prefab:
     - target: {fileID: 114000013571885070, guid: 31519416337f25e4b9fde583b2639c94,
         type: 2}
       propertyPath: rateOfFlux
-      value: 0.02
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 114000010200109192, guid: 31519416337f25e4b9fde583b2639c94,
         type: 2}

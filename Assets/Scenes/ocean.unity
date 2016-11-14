@@ -15114,6 +15114,11 @@ Prefab:
       propertyPath: soundPlayer
       value: 
       objectReference: {fileID: 354024038}
+    - target: {fileID: 114000012325604620, guid: 63855620c38b3404880916b060e58b5a,
+        type: 2}
+      propertyPath: photonsRequired
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63855620c38b3404880916b060e58b5a, type: 2}
   m_IsPrefabParent: 0
