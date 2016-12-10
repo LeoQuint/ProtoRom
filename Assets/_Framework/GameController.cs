@@ -214,7 +214,7 @@ public class GameController : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            SetBar(true);
+            SetBar(true, true, 40f);
         }
         if (barLoading)
         {
@@ -423,19 +423,43 @@ public class GameController : MonoBehaviour {
         mateTraker.transform.rotation = rotationMate;
         trackerSprite.rotation = Quaternion.identity;
     }
-    public void SetBar(bool status)
+    public void SetBar(bool status, bool fovChange, float valFOV)
     {
         //barloadTimer = Time.time + barLoadTime;
         barloadTimer = 0f;
         barLoading = true;
-        
+        isLerpingFOV = true;
+        targetFOV = valFOV;
     }
     public void ActivateWildlife()
     {
-
+        Vector3 playerPos = player.position;
+        float leftRight = 1f;
+        for (int i = 0; i < wildlifeList.Count; ++i)
+        {
+            wildlifeList[i].transform.position = new Vector3((playerPos.x) + 70f*leftRight, Mathf.Clamp(playerPos.y + Random.Range(-20f,20f), m_worldLimits.w + 5f, m_worldLimits.z -5f), playerPos.z + Random.Range(5f, 35f)  );
+            leftRight *= -1f;
+            wildlifeList[i].transform.rotation = Quaternion.Euler(0f, 90f * leftRight, 0f);
+            
+            
+            wildlifeList[i].SetActive(true);
+        }
     }
+    //Variables to lerp FOV
+    private bool isLerpingFOV = false;
+    private float targetFOV = 40f;
+
     void MovingBars()
     {
+        if (isLerpingFOV)
+        {
+            Camera.main.fieldOfView -= 5f * Time.deltaTime;
+            if (Camera.main.fieldOfView <= targetFOV)
+            {
+                Camera.main.fieldOfView = targetFOV;
+                isLerpingFOV = false;
+            }
+        }
         float size = 0f;
         barloadTimer +=  Time.deltaTime/barLoadTime;
         if (barDirection == 1f)

@@ -402,12 +402,14 @@ public class player : MonoBehaviour {
     public void GameOver()
     {
         EndGameCinematic();
+        StartCoroutine( DelayBeforeReset());
         isGameover = true;
     }
 
     public void EndGameCinematic()
     {
-        gc.SetBar(true);
+        gc.SetBar(true, true, 40f);
+        gc.ActivateWildlife();
     }
 
     IEnumerator DelayBeforeReset()
