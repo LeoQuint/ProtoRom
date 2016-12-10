@@ -296,7 +296,9 @@ ModelImporter:
     400286: joint91
     400288: joint97
     4300000: hallucigenia
-    7400000: Take 001
+    7400000: swim
+    7400002: fastSwim
+    7400004: dance
     9500000: //RootNode
     13700000: hallucigenia
   materials:
@@ -319,7 +321,1237 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: swim
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hallucigenia
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12/joint20 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12/joint20 12/joint21 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13/joint20 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13/joint20 13/joint21 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10/joint20 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10/joint20 10/joint21 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11/joint20 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11/joint20 11/joint21 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8/joint20 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8/joint20 8/joint21 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9/joint20 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9/joint20 9/joint21 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6/joint20 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6/joint20 6/joint21 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7/joint20 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7/joint20 7/joint21 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4/joint20 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4/joint20 4/joint21 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5/joint20 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5/joint20 5/joint21 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2/joint20 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2/joint20 2/joint21 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3/joint20 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3/joint20 3/joint21 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1/joint20 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1/joint20 1/joint21 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4/joint32 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4/joint32 4/joint33 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5/joint32 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5/joint32 5/joint33 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3/joint32 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3/joint32 3/joint33 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2/joint32 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2/joint32 2/joint33 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1/joint32
+          1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1/joint32
+          1/joint33 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31/joint32
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31/joint32/joint33
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fastSwim
+      takeName: Take 001
+      firstFrame: 102
+      lastFrame: 132
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hallucigenia
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12/joint20 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12/joint20 12/joint21 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13/joint20 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13/joint20 13/joint21 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10/joint20 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10/joint20 10/joint21 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11/joint20 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11/joint20 11/joint21 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8/joint20 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8/joint20 8/joint21 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9/joint20 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9/joint20 9/joint21 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6/joint20 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6/joint20 6/joint21 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7/joint20 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7/joint20 7/joint21 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4/joint20 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4/joint20 4/joint21 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5/joint20 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5/joint20 5/joint21 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2/joint20 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2/joint20 2/joint21 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3/joint20 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3/joint20 3/joint21 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1/joint20 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1/joint20 1/joint21 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4/joint32 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4/joint32 4/joint33 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5/joint32 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5/joint32 5/joint33 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3/joint32 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3/joint32 3/joint33 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2/joint32 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2/joint32 2/joint33 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1/joint32
+          1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1/joint32
+          1/joint33 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31/joint32
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31/joint32/joint33
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: dance
+      takeName: Take 001
+      firstFrame: 136
+      lastFrame: 283
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hallucigenia
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12/joint20 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint28/joint16
+          12/joint17 12/joint18 12/joint19 12/joint20 12/joint21 12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13/joint20 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint15/joint91/joint16
+          13/joint17 13/joint18 13/joint19 13/joint20 13/joint21 13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10/joint20 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint27/joint16
+          10/joint17 10/joint18 10/joint19 10/joint20 10/joint21 10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11/joint20 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/joint83/joint16
+          11/joint17 11/joint18 11/joint19 11/joint20 11/joint21 11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8/joint20 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint26/joint16
+          8/joint17 8/joint18 8/joint19 8/joint20 8/joint21 8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9/joint20 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint75/joint16
+          9/joint17 9/joint18 9/joint19 9/joint20 9/joint21 9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6/joint20 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint25/joint16
+          6/joint17 6/joint18 6/joint19 6/joint20 6/joint21 6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7/joint20 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint67/joint16
+          7/joint17 7/joint18 7/joint19 7/joint20 7/joint21 7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4/joint20 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint24/joint16
+          4/joint17 4/joint18 4/joint19 4/joint20 4/joint21 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5/joint20 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint59/joint16
+          5/joint17 5/joint18 5/joint19 5/joint20 5/joint21 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2/joint20 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint23/joint16
+          2/joint17 2/joint18 2/joint19 2/joint20 2/joint21 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3/joint20 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint51/joint16
+          3/joint17 3/joint18 3/joint19 3/joint20 3/joint21 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint22/joint16/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1/joint20 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint43/joint16
+          1/joint17 1/joint18 1/joint19 1/joint20 1/joint21 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4/joint32 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint35/joint30 4/joint31
+          4/joint32 4/joint33 4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5/joint32 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint97/joint30 5/joint31
+          5/joint32 5/joint33 5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3/joint32 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint34/joint30 3/joint31
+          3/joint32 3/joint33 3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2/joint32 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint103/joint30 2/joint31
+          2/joint32 2/joint33 2
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1/joint32
+          1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint29/joint30 1/joint31 1/joint32
+          1/joint33 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31/joint32
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint109/joint30/joint31/joint32/joint33
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

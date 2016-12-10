@@ -286,8 +286,8 @@ public class player : MonoBehaviour {
         Camera.main.GetComponent<cameraFollow>().Transition();
         fxp.PlayOnce(8);
         gc.ChangeState(EvoState.EUKARYOTE);
-        transform.FindChild("prokaryote_cell").gameObject.SetActive(false);
-        transform.FindChild("eukaryote_cell").gameObject.SetActive(true);
+        StartCoroutine(transform.FindChild("prokaryote_cell").gameObject.SetActive(false, 0.5f));
+        StartCoroutine(transform.FindChild("eukaryote_cell").gameObject.SetActive(true, 0.5f));
     }
     void StartPhaseThree()
     {
@@ -298,8 +298,8 @@ public class player : MonoBehaviour {
         rb.angularVelocity = new Vector3(0f,0f,0f);
         rb.velocity = new Vector3(0f, 0f, 0f);
         transform.rotation = Quaternion.identity;
-        transform.FindChild("Cluster").gameObject.SetActive(true);
-        transform.FindChild("eukaryote_cell").gameObject.SetActive(false);
+        StartCoroutine(transform.FindChild("Cluster").gameObject.SetActive(true, 0.5f));
+        StartCoroutine(transform.FindChild("eukaryote_cell").gameObject.SetActive(false, 0.5f));
     }
     public void StartPhaseFour()
     {
@@ -309,8 +309,8 @@ public class player : MonoBehaviour {
         Debug.Log("Phase 4");
         gc.ChangeState(EvoState.PLANARIAN);
         transform.localScale = Vector3.one * 3f;
-        transform.FindChild("Cluster").gameObject.SetActive(false);
-        transform.FindChild("planaria_B").gameObject.SetActive(true);
+        StartCoroutine(transform.FindChild("Cluster").gameObject.SetActive(false, 0.5f));
+        StartCoroutine(transform.FindChild("planaria_B").gameObject.SetActive(true, 0.5f));
     }
     void StartPhaseFive()
     {
@@ -337,17 +337,17 @@ public class player : MonoBehaviour {
 
         if (finalType == 0)
         {
-            transform.FindChild("hallucigenia").gameObject.SetActive(true);
+            StartCoroutine(transform.FindChild("hallucigenia").gameObject.SetActive(true, 0.5f));
         }
         else if(finalType == 1)
         {
-            transform.FindChild("anomalocaris").gameObject.SetActive(true);
+            StartCoroutine(transform.FindChild("anomalocaris").gameObject.SetActive(true, 0.5f));
         }
         else {
-            transform.FindChild("nectocaris").gameObject.SetActive(true);
+            StartCoroutine(transform.FindChild("nectocaris").gameObject.SetActive(true, 0.5f));
         }
 
-        transform.FindChild("planaria_B").gameObject.SetActive(false);
+        StartCoroutine(transform.FindChild("planaria_B").gameObject.SetActive(false, 0.5f));
 
         gc.ChangeState(EvoState.PTERYX);
     }
@@ -401,8 +401,21 @@ public class player : MonoBehaviour {
     }
     public void GameOver()
     {
+        EndGameCinematic();
+        isGameover = true;
+    }
+
+    public void EndGameCinematic()
+    {
+        gc.SetBar(true);
+    }
+
+    IEnumerator DelayBeforeReset()
+    {
+        yield return new WaitForSeconds(10f);
         gc.GameOver();
         isGameover = true;
         StartCoroutine(LoadMenu());
     }
+    
 }

@@ -460,6 +460,7 @@ MonoBehaviour:
   baseMovementSpeed: 100
   detectionRange: 4
   isFleeing: 0
+  type: 0
   isMate: 0
   m_lifetime: 30
   timeToChase: 0

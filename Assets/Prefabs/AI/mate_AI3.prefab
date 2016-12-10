@@ -1497,13 +1497,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c244369ab6eaa4fac93329ca71a3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_movementSpeed: 90
-  m_swimRate: 0.1
+  m_movementSpeed: 150
+  m_swimRate: 0.09
   m_checkPointPrefab: {fileID: 1000012042434330, guid: 2749761f65160b54eb0db462c8e8b0e0,
     type: 2}
   m_distancePerCheckPoint: 40
   m_maxSideAmplitude: 4
   m_turnRate: 150
+  m_detectionRangeRatio: 40
 --- !u!135 &135000011308276810
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1514,7 +1515,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137000013714538070
 SkinnedMeshRenderer:

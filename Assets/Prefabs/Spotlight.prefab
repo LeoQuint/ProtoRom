@@ -152,6 +152,7 @@ MonoBehaviour:
     type: 2}
   isAmbiant: 0
   isOnDuration: 1
+  scalingSpeed: 5
 --- !u!124 &124000013435889768
 Behaviour:
   m_ObjectHideFlags: 1

@@ -17,6 +17,8 @@ public class lightCamera : MonoBehaviour {
     public bool isAmbiant = false;
     public float isOnDuration = 2f;
 
+    public float scalingSpeed = 5f;
+
     private Transform m_mainObj;
     private float m_scale = 0.01f;
 	// Use this for initialization
@@ -76,7 +78,7 @@ public class lightCamera : MonoBehaviour {
     {
         if (spotLight.color.a >= 0f)
         {
-            spotLight.color = new Vector4(1f, 1f, 1f, spotLight.color.a - (2f* Time.deltaTime));
+            spotLight.color = new Vector4(1f, 1f, 1f, spotLight.color.a - (scalingSpeed * Time.deltaTime));
         }
         
     }

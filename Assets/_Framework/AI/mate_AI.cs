@@ -15,6 +15,7 @@ public class mate_AI : MonoBehaviour
     public float m_distancePerCheckPoint;
     public float m_maxSideAmplitude;
     public float m_turnRate;
+    public float m_detectionRangeRatio = 20;
     /// <summary>
     /// Private Variables
     /// </summary>
@@ -32,6 +33,8 @@ public class mate_AI : MonoBehaviour
     private Transform playerPos;
     private Rigidbody rb;
     private Animator anim;
+
+
 
     void Awake()
     {
@@ -182,7 +185,7 @@ public class mate_AI : MonoBehaviour
             {
                 m_lastSwimBurst = Time.time;
                 float distance = Vector3.Distance(transform.position, playerPos.position);
-                distanceToPlayerRatio = 1f - (distance / 15f);
+                distanceToPlayerRatio = 1f - (distance / m_detectionRangeRatio);
                 if (distanceToPlayerRatio < 0f)
                 {
                     distanceToPlayerRatio = 0f;

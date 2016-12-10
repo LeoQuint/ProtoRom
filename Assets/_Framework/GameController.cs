@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour {
 
 
     private Vector2[] nPos = new Vector2[100];
-    
+
 
     public EvoState state;
     List<GameObject> cells = new List<GameObject>();
@@ -51,19 +51,57 @@ public class GameController : MonoBehaviour {
     public float textSolidDuration;
     public fxPlayer fxp;
 
+    public GameObject mateTraker;
+    private Transform trackerArrow;
+    private Transform trackerTimer;
+    private Transform trackerSprite;
+    private bool isTracking = false;
+    private Transform trackedMate;
+    public float distanceToOutOfScreenChase = 20f;
+    public float distanceToPopTracker = 10f;
+    public float timerBeforeLosingMateChase = 15f;
+    public float showTimerRemaining = 10f;
+    private float chaseTimer;
+
+    private bool barLoading = false;
+    private float barDirection = 1f;
+    private float maxBarHeight;
+    [SerializeField][Range(0f,1f)]
+    float percentBarHeight = 0.2f;
+    [SerializeField]
+    float barLoadTime = 3f;
+    float barloadTimer;
+
+
     //private float 
     //private Vector3 spawnVec = new Vector3(0f,0f,-20f);
     Transform player;
     GameObject mainCam;
 
+    public RectTransform topBar;
+    public RectTransform botBar;
+
     private GameObject[] plants;
+
+    public GameObject wildLife_Prefab_1;
+    public GameObject wildLife_Prefab_2;
+    public GameObject wildLife_Prefab_3;
+
+    public int totalNumOfWildlifePerType = 20;
+
+    private List<GameObject> wildlifeList = new List<GameObject>();
 
     void Awake()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         state = EvoState.PROKARYOTE;
-        
+
+
+        trackerArrow = mateTraker.transform.FindChild("arrow");        
+        trackerSprite = mateTraker.transform.FindChild("sprite");
+        trackerTimer = trackerSprite.FindChild("timer");
+
         plants = GameObject.FindGameObjectsWithTag("plant");
         for (int i = 0; i < plants.Length; i++)
         {
@@ -72,6 +110,8 @@ public class GameController : MonoBehaviour {
     }
     void Start()
     {
+        PreSpawnWildLife();
+        maxBarHeight = Screen.height * percentBarHeight * 2f;
         m_spawnTimer = Time.time -m_nutrientSpawnRate;
         StartCoroutine(FirstTip());
     }
@@ -139,16 +179,22 @@ public class GameController : MonoBehaviour {
                         GameObject m = Instantiate(mate, pos, Quaternion.identity) as GameObject;
                         player.GetComponent<player>().SetMate(m);
                         m.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
+                        trackedMate = m.transform;
+                        StartTrackingMate(true);
                         break;
                     case 1:
                         GameObject m1 = Instantiate(mate2, pos, Quaternion.identity) as GameObject;
                         player.GetComponent<player>().SetMate(m1);
                         m1.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
+                        trackedMate = m1.transform;
+                        StartTrackingMate(true);
                         break;
                     case 2:
                         GameObject m2 = Instantiate(mate3, pos, Quaternion.identity) as GameObject;
                         player.GetComponent<player>().SetMate(m2);
                         m2.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
+                        trackedMate = m2.transform;
+                        StartTrackingMate(true);
                         break;
                 }
                 
@@ -156,23 +202,28 @@ public class GameController : MonoBehaviour {
                 ShowTip(4);
                 break;
             case EvoState.GAMEOVER:
+                StartTrackingMate(false);
                 //player.GetComponent<player>().GameOver();
                 //ShowTip(5);
                 break;
 
         }
     }
+    
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            GameObject m = Instantiate(mate, transform.position, Quaternion.identity) as GameObject;
-            player.GetComponent<player>().SetMate(m);
-            m.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
-
+            SetBar(true);
         }
-
+        if (barLoading)
+        {
+            MovingBars();
+        }
+        if (isTracking)
+        {
+            TrackMate();
+        }
         if (isTextDisplaying)
         {
             tipsText.color = new Color(1f, 1f, 1f, tipsText.color.a + (textFadeSpeed * Time.deltaTime));
@@ -225,6 +276,21 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    void PreSpawnWildLife()
+    {
+        for (int i = 0; i < totalNumOfWildlifePerType; ++i)
+        {
+            GameObject go1 = Instantiate(wildLife_Prefab_1, Vector3.back * 100f, Quaternion.identity) as GameObject;
+            GameObject go2 = Instantiate(wildLife_Prefab_2, Vector3.back * 100f, Quaternion.identity) as GameObject;
+            GameObject go3 = Instantiate(wildLife_Prefab_3, Vector3.back * 100f, Quaternion.identity) as GameObject;
+            go1.SetActive(false);
+            go2.SetActive(false);
+            go3.SetActive(false);
+            wildlifeList.Add(go1);
+            wildlifeList.Add(go2);
+            wildlifeList.Add(go3);
+        }
+    }
     void SpawnNutrient()
     {
         Vector3 pos;
@@ -296,6 +362,106 @@ public class GameController : MonoBehaviour {
         //tipsText.color = new Color(1f,1f,1f, 0f);
         //isTextDisplaying = true;
     }
+    //Function to set the sprite and status of follow arrow.
+    public void StartTrackingMate(bool val)
+    {
+        chaseTimer = Time.time + timerBeforeLosingMateChase;
+        isTracking = val;
+        mateTraker.SetActive(val);
+    }
+    public Vector3 lookVec = Vector3.forward;
+    //function to follow and rotate and update timer.
+    void TrackMate()
+    {
+        if (chaseTimer < Time.time)
+        {
+            player.GetComponent<player>().GameOver();
+        }
+        float distanceToMate = Vector3.Distance(player.position, trackedMate.position);
+        if (distanceToMate > distanceToOutOfScreenChase)
+        {
+            float timeRemaining = chaseTimer - Time.time;
+            if (timeRemaining < showTimerRemaining)
+            {
+                trackerTimer.gameObject.SetActive(true);
+                trackerTimer.GetComponent<Text>().text = timeRemaining.ToString("F0");
+            }
+            else if(trackerTimer.gameObject.activeSelf)
+            {
+                trackerTimer.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            chaseTimer = Time.time + timerBeforeLosingMateChase;
+            if (trackerTimer.gameObject.activeSelf)
+            {
+                trackerTimer.gameObject.SetActive(false);
+            }
+        }
+
+
+
+        if (distanceToMate > distanceToPopTracker)
+        {
+            if (!mateTraker.activeSelf) {
+                mateTraker.SetActive(true);
+            }            
+        }
+        else if(mateTraker.activeSelf)
+        {
+            mateTraker.SetActive(false);
+        }
+
+        float angle = 90f + (Mathf.Atan(   ( player.position.y - trackedMate.position.y ) /
+                                    (player.position.x - trackedMate.position.x) ) * Mathf.Rad2Deg);
+        if (player.position.x < trackedMate.position.x)
+        {
+            angle += 180f;
+        } 
+        Quaternion rotationMate = Quaternion.Euler(lookVec * angle);
+        mateTraker.transform.rotation = rotationMate;
+        trackerSprite.rotation = Quaternion.identity;
+    }
+    public void SetBar(bool status)
+    {
+        //barloadTimer = Time.time + barLoadTime;
+        barloadTimer = 0f;
+        barLoading = true;
+        
+    }
+    public void ActivateWildlife()
+    {
+
+    }
+    void MovingBars()
+    {
+        float size = 0f;
+        barloadTimer +=  Time.deltaTime/barLoadTime;
+        if (barDirection == 1f)
+        {
+            size = Mathf.Lerp(topBar.sizeDelta.y, maxBarHeight, barloadTimer);
+        }
+        else{
+            size = Mathf.Lerp(topBar.sizeDelta.y, 0f, barloadTimer);
+        }
+
+
+        if (size >= maxBarHeight-2f && barDirection == 1f)
+        {
+            size = maxBarHeight;
+            barLoading = false;
+            barDirection *= -1f;
+        }
+        if (size-2f < 0f && barDirection == -1f)
+        {
+            barLoading = false;
+            size = 0f;
+            barDirection *= -1f;
+        }
+        topBar.sizeDelta =  new Vector2(Screen.width, size);
+        botBar.sizeDelta = new Vector2(Screen.width, size);
+    }
     //Quick hack function to set a bool to true in popup to keep the first tips on until first creature eaten.
     public void SetFirstTipOff()
     {
@@ -317,4 +483,5 @@ public class GameController : MonoBehaviour {
         fading = true;
     }
    
+
 }
