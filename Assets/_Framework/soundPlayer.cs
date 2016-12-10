@@ -28,6 +28,14 @@ public class soundPlayer : MonoBehaviour {
         musicAud = GetComponent<AudioSource>();
     }
 
+    void Update()
+    {
+        if (Input.GetMouseButtonUp(2) || Input.GetKeyDown(KeyCode.C))
+        {
+            Cursor.visible = !Cursor.visible;
+        }
+    }
+
     public void Reset()
     {
         musicAud.clip = begin;

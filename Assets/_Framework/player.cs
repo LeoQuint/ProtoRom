@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class player : MonoBehaviour {
 
@@ -104,7 +105,7 @@ public class player : MonoBehaviour {
             rb.AddForce(transform.forward * -1f * baseSwimForce * 0.8f * Time.deltaTime);
             return;
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) &&  !EventSystem.current.IsPointerOverGameObject())
         {            
             inactivityTimer = 0f;
             if (gc.state == EvoState.CLUSTER)
@@ -140,7 +141,7 @@ public class player : MonoBehaviour {
            
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             inactivityTimer = 0f;
             if (gc.state == EvoState.CLUSTER)
@@ -148,18 +149,22 @@ public class player : MonoBehaviour {
                 return;
             }          
             
-            directionVector = new Vector3(Input.mousePosition.x - Camera.main.WorldToScreenPoint(transform.position).x,
-                                    Input.mousePosition.y - Camera.main.WorldToScreenPoint(transform.position).y, 0f);
-            rb.AddForce(directionVector.normalized * baseSwimForce * Time.deltaTime);
-            if (gc.state >= EvoState.PLANARIAN && Time.time > swinFXTimer + 1f)
+            
+            if (gc.state >= EvoState.PLANARIAN && Time.time > swinFXTimer + 0.6f)
             {
                 fxp.PlayOnce(3);
                 swinFXTimer = Time.time;
+                directionVector = new Vector3(Input.mousePosition.x - Camera.main.WorldToScreenPoint(transform.position).x,
+                                    Input.mousePosition.y - Camera.main.WorldToScreenPoint(transform.position).y, 0f);
+                rb.AddForce(directionVector.normalized * baseSwimForce);
             }
-            else if (Time.time > swinFXTimer + 1f)
+            else if (Time.time > swinFXTimer + 0.6f)
             {
                 fxp.PlayOnce(4);
                 swinFXTimer = Time.time;
+                directionVector = new Vector3(Input.mousePosition.x - Camera.main.WorldToScreenPoint(transform.position).x,
+                                    Input.mousePosition.y - Camera.main.WorldToScreenPoint(transform.position).y, 0f);
+                rb.AddForce(directionVector.normalized * baseSwimForce);
             }
 
             

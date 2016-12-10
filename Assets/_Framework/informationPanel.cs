@@ -24,14 +24,24 @@ public class informationPanel : MonoBehaviour {
         mainText.gameObject.SetActive(false);
         Debug.Log(transform.position);
         startingX = transform.position.x;
+        MakeNewlines();
     }
 
-	void Start () {
+    void MakeNewlines()
+    {
+        for (int i = 0; i < displayTexts.Length; ++i)
+        {
+            displayTexts[i] = displayTexts[i].Replace("NEWLINE", "\n");
+        }
+
+    }
+
+    void Start() {
         //transform.localScale = new Vector3(m_scale, m_scale, m_scale);
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update() {
         if (Input.GetKeyDown(KeyCode.P))
         {
             PopUp(0);
@@ -48,15 +58,15 @@ public class informationPanel : MonoBehaviour {
             //}
             //transform.localScale = new Vector3(m_scale, m_scale, m_scale);
             float newX = transform.position.x + (2000f * Time.deltaTime);
-            if (transform.position.x >= 350f)
+            if (transform.position.x >= 550f)
             {
-                newX = 350f;
+                newX = 550f;
                 m_scalingUp = false;
                 mainText.gameObject.SetActive(true);
                 StartCoroutine(ClosingDelay());
             }
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
-            
+
         }
         if (m_scalingDown)
         {
@@ -82,13 +92,16 @@ public class informationPanel : MonoBehaviour {
     }
     public void PopUp()
     {
-        helpButton.SetActive(false);
+        if (m_scalingUp || m_scalingDown) {
+            return;
+        }
+        //helpButton.SetActive(false);
         mainText.text = displayTexts[currentTip];
         m_scalingUp = true;
     }
     public void PopUp(int index)
     {
-        helpButton.SetActive(false);
+        //helpButton.SetActive(false);
         currentTip = index;
         mainText.text = displayTexts[index];
         m_scalingUp = true;
