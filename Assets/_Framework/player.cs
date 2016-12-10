@@ -97,6 +97,7 @@ public class player : MonoBehaviour {
 
         if (inactivityTimer >= inactivityResetTime)
         {
+            soundBoard.Reset();
             SceneManager.LoadScene(0);
         }
         if (isGameover)
@@ -150,7 +151,7 @@ public class player : MonoBehaviour {
             }          
             
             
-            if (gc.state >= EvoState.PLANARIAN && Time.time > swinFXTimer + 0.6f)
+            if (gc.state >= EvoState.PLANARIAN && Time.time > swinFXTimer + 0.3f)
             {
                 fxp.PlayOnce(3);
                 swinFXTimer = Time.time;
@@ -158,7 +159,7 @@ public class player : MonoBehaviour {
                                     Input.mousePosition.y - Camera.main.WorldToScreenPoint(transform.position).y, 0f);
                 rb.AddForce(directionVector.normalized * baseSwimForce);
             }
-            else if (Time.time > swinFXTimer + 0.6f)
+            else if (Time.time > swinFXTimer + 0.3f)
             {
                 fxp.PlayOnce(4);
                 swinFXTimer = Time.time;
@@ -235,6 +236,7 @@ public class player : MonoBehaviour {
     {
         fxp.PlayOnce(7);
         nutrientCollected += val;
+        gc.SetFirstTipOff();
         float scale = 0.7f + (nutrientCollected/3f);
         transform.localScale = new Vector3(scale, scale, scale);
         if (nutrientCollected >= nutrientRequired)
@@ -306,6 +308,7 @@ public class player : MonoBehaviour {
         fxp.PlayOnce(8);
         Debug.Log("Phase 4");
         gc.ChangeState(EvoState.PLANARIAN);
+        transform.localScale = Vector3.one * 3f;
         transform.FindChild("Cluster").gameObject.SetActive(false);
         transform.FindChild("planaria_B").gameObject.SetActive(true);
     }

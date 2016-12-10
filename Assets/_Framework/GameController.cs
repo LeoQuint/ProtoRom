@@ -97,6 +97,7 @@ public class GameController : MonoBehaviour {
                 ShowTip(2);
                 break;
             case EvoState.PLANARIAN:
+                mainCam.GetComponent<cameraFollow>().ZoomOut();
                 for (int i = 0; i < plants.Length; i++)
                 {
                     plants[i].SetActive(true);
@@ -295,6 +296,11 @@ public class GameController : MonoBehaviour {
         //tipsText.color = new Color(1f,1f,1f, 0f);
         //isTextDisplaying = true;
     }
+    //Quick hack function to set a bool to true in popup to keep the first tips on until first creature eaten.
+    public void SetFirstTipOff()
+    {
+        infoPanel.SetFirstTipOff();
+    }
     IEnumerator TextDisplaying()
     {
         yield return new WaitForSeconds(textSolidDuration);
@@ -310,4 +316,5 @@ public class GameController : MonoBehaviour {
         yield return new WaitForSeconds(3f);
         fading = true;
     }
+   
 }

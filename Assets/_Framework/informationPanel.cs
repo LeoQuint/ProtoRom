@@ -14,16 +14,28 @@ public class informationPanel : MonoBehaviour {
     private float m_scale = 0f;
     private Text mainText;
 
-
+    public bool m_HasEatenFirstFood = false;
     private float startingX;
+
+    private bool m_English = true;
+
+    public Sprite english;
+    public Sprite french;
+    public Image languageButton;
+
+    public float instructionStayTimer = 10f;
+
+    public Text educationText;
+    public string[] displayEducationTexts;
 
     private int currentTip = 0;
     void Awake()
     {
         mainText = transform.FindChild("Text").GetComponent<Text>();
-        mainText.gameObject.SetActive(false);
+        mainText.gameObject.SetActive(true);
         Debug.Log(transform.position);
         startingX = transform.position.x;
+        educationText.color = Vector4.zero;
         MakeNewlines();
     }
 
@@ -33,59 +45,44 @@ public class informationPanel : MonoBehaviour {
         {
             displayTexts[i] = displayTexts[i].Replace("NEWLINE", "\n");
         }
-
+        for (int i = 0; i < displayEducationTexts.Length; ++i)
+        {
+            displayEducationTexts[i] = displayEducationTexts[i].Replace("NEWLINE", "\n");
+        }
     }
 
     void Start() {
-        //transform.localScale = new Vector3(m_scale, m_scale, m_scale);
     }
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            PopUp(0);
-        }
+
         if (m_scalingUp)
         {
-            //m_scale += m_scalingSpeed * Time.deltaTime;
-            //if (m_scale >= 1f)
-            //{
-            //    m_scale = 1f;
-            //    m_scalingUp = false;
-            //    mainText.gameObject.SetActive(true);
-            //    StartCoroutine(ClosingDelay());
-            //}
-            //transform.localScale = new Vector3(m_scale, m_scale, m_scale);
             float newX = transform.position.x + (2000f * Time.deltaTime);
             if (transform.position.x >= 550f)
             {
                 newX = 550f;
                 m_scalingUp = false;
-                mainText.gameObject.SetActive(true);
-                StartCoroutine(ClosingDelay());
+                //mainText.gameObject.SetActive(true);
+                if (m_HasEatenFirstFood)
+                {
+                    StartCoroutine(ClosingDelay());
+                }
+                
             }
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
 
         }
-        if (m_scalingDown)
+        else if (m_scalingDown)
         {
-            //m_scale -= m_scalingSpeed * Time.deltaTime;
-            //if (m_scale <= 0f)
-            //{
-            //    helpButton.SetActive(true);
-            //    m_scale = 0f;
-            //    mainText.gameObject.SetActive(false);
-            //    m_scalingDown = false;
-            //}
-            //transform.localScale = new Vector3(m_scale, m_scale, m_scale);
             float newX = transform.position.x - (2000f * Time.deltaTime);
             if (transform.position.x <= startingX)
             {
                 newX = startingX;
                 m_scalingDown = false;
-                mainText.gameObject.SetActive(false);
-                helpButton.SetActive(true);
+                //mainText.gameObject.SetActive(false);
+                //helpButton.SetActive(true);
             }
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
         }
@@ -93,6 +90,7 @@ public class informationPanel : MonoBehaviour {
     public void PopUp()
     {
         if (m_scalingUp || m_scalingDown) {
+
             return;
         }
         //helpButton.SetActive(false);
@@ -101,20 +99,48 @@ public class informationPanel : MonoBehaviour {
     }
     public void PopUp(int index)
     {
-        //helpButton.SetActive(false);
+        
         currentTip = index;
-        mainText.text = displayTexts[index];
+        if (!m_English)
+        {
+            currentTip += 5;
+        }
+        mainText.text = displayTexts[currentTip];
         m_scalingUp = true;
     }
 
     IEnumerator ClosingDelay()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(instructionStayTimer);
         ClosePopUp();
     }
 
     public void ClosePopUp()
     {
         m_scalingDown = true;
+    }
+
+    public void SetFirstTipOff()
+    {
+        m_HasEatenFirstFood = true;
+        StartCoroutine(ClosingDelay());
+    }
+
+    public void SwitchLanguage()
+    {
+        m_English = !m_English;
+        if (!m_English)
+        {
+            languageButton.sprite = english;
+            currentTip += 5;
+            mainText.text = displayTexts[currentTip];
+        }
+        else
+        {
+            languageButton.sprite = french;
+            currentTip -= 5;
+            mainText.text = displayTexts[currentTip];
+        }
+
     }
 }
