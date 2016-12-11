@@ -27,8 +27,14 @@ public class informationPanel : MonoBehaviour {
 
     public Text educationText;
     public string[] displayEducationTexts;
+    public float educationTextDisplayTime = 8f;
+    [SerializeField]
+    float educationTextFadeSpeed = 2f;
+    int lastStageIndex = 0;
 
     private int currentTip = 0;
+
+
     void Awake()
     {
         mainText = transform.FindChild("Text").GetComponent<Text>();
@@ -86,6 +92,12 @@ public class informationPanel : MonoBehaviour {
             }
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
         }
+        //Education text
+        if (isEducationFades)
+        {
+            FadeInOutEducation(educationUp);
+        }
+
     }
     public void PopUp()
     {
@@ -95,6 +107,16 @@ public class informationPanel : MonoBehaviour {
         }
         //helpButton.SetActive(false);
         mainText.text = displayTexts[currentTip];
+        if (!m_English)
+        {
+            educationText.text = displayEducationTexts[currentTip + lastStageIndex + 2 + 5];
+        }
+        else
+        {
+            educationText.text = displayEducationTexts[currentTip + lastStageIndex];
+        }
+        isEducationFades = true;
+        educationUp = true;
         m_scalingUp = true;
     }
     public void PopUp(int index)
@@ -103,9 +125,18 @@ public class informationPanel : MonoBehaviour {
         currentTip = index;
         if (!m_English)
         {
-            currentTip += 5;
+            mainText.text = displayTexts[currentTip + 5];
+            educationText.text = displayEducationTexts[currentTip + lastStageIndex + 2 + 5];
         }
-        mainText.text = displayTexts[currentTip];
+        else
+        {
+            mainText.text = displayTexts[currentTip];
+            educationText.text = displayEducationTexts[currentTip + lastStageIndex];
+        }
+        
+     
+        isEducationFades = true;
+        educationUp = true;
         m_scalingUp = true;
     }
 
@@ -132,15 +163,75 @@ public class informationPanel : MonoBehaviour {
         if (!m_English)
         {
             languageButton.sprite = english;
-            currentTip += 5;
-            mainText.text = displayTexts[currentTip];
+            //currentTip += 5;
+            mainText.text = displayTexts[currentTip + 5];
+
+            if (currentTip == 4)
+            {
+                //education text has 7 length hence the +2
+                educationText.text = displayEducationTexts[currentTip + lastStageIndex + 2 + 5];
+            }
+            else
+            {
+                educationText.text = displayEducationTexts[currentTip +2 + 5];
+            }
         }
         else
         {
             languageButton.sprite = french;
-            currentTip -= 5;
+            //currentTip -= 5;
             mainText.text = displayTexts[currentTip];
+
+            if (currentTip == 4)
+            {
+                educationText.text = displayEducationTexts[currentTip + lastStageIndex];
+            }
+            else
+            {
+                educationText.text = displayEducationTexts[currentTip];
+            }
         }
 
     }
+
+    //Education text section
+    //Sets the index of the educational text for the last stage base on what animal you have.
+    public void SetLastPhaseIndex(int val)
+    {
+        lastStageIndex = val;
+    }
+    private float color_Education = 0f;
+    private bool isEducationFades = false;
+    private bool educationUp = false;
+    void FadeInOutEducation(bool up)
+    {
+        if (up)
+        {
+            color_Education += Time.deltaTime * educationTextFadeSpeed;
+            if (color_Education >= 1f)
+            {
+                color_Education = 1f;
+                isEducationFades = false;
+                StartCoroutine(DelayForEducation());
+            }
+        }
+        else
+        {
+            color_Education -= Time.deltaTime * educationTextFadeSpeed;
+            if (color_Education <= 0f)
+            {
+                color_Education = 0f;
+                isEducationFades = false;
+            }
+        }
+        educationText.color = Vector4.one * color_Education;
+    }
+
+    IEnumerator DelayForEducation()
+    {
+        yield return new WaitForSeconds(educationTextDisplayTime);
+        isEducationFades = true;
+        educationUp = false;
+    }
+
 }

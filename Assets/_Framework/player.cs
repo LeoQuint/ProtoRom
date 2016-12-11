@@ -365,7 +365,7 @@ public class player : MonoBehaviour {
         }
 
         if (finalType == 0)
-        {
+        {            
             StartCoroutine(transform.FindChild("hallucigenia").gameObject.SetActive(true, 0.5f));
         }
         else if(finalType == 1)
@@ -441,6 +441,7 @@ public class player : MonoBehaviour {
 
     public void EndGameCinematic()
     {
+        gc.StartTrackingMate(false);
         gc.SetBar(true, true, 40f);
         gc.ActivateWildlife();
     }

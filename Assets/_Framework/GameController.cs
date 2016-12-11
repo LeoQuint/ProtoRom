@@ -181,6 +181,7 @@ public class GameController : MonoBehaviour {
                         m.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
                         trackedMate = m.transform;
                         StartTrackingMate(true);
+                        infoPanel.SetLastPhaseIndex(2);
                         break;
                     case 1:
                         GameObject m1 = Instantiate(mate2, pos, Quaternion.identity) as GameObject;
@@ -188,6 +189,7 @@ public class GameController : MonoBehaviour {
                         m1.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
                         trackedMate = m1.transform;
                         StartTrackingMate(true);
+                        infoPanel.SetLastPhaseIndex(1);
                         break;
                     case 2:
                         GameObject m2 = Instantiate(mate3, pos, Quaternion.identity) as GameObject;
@@ -195,6 +197,7 @@ public class GameController : MonoBehaviour {
                         m2.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
                         trackedMate = m2.transform;
                         StartTrackingMate(true);
+                        infoPanel.SetLastPhaseIndex(0);
                         break;
                 }
                 
