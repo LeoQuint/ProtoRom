@@ -32,7 +32,7 @@ public class cell_AI : MonoBehaviour {
     public float m_lifetime= 30f;
     void Awake()
     {
-        type = Random.Range(0,100) > 49? 0 : 1;
+        type = Random.Range(0,3);
         anim = GetComponent<Animator>();
         GetComponent<SphereCollider>().radius = detectionRange;
     }

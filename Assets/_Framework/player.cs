@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
@@ -64,7 +65,7 @@ public class player : MonoBehaviour {
 
     private GameObject myMate;
 
-    private int[] cellEatenType = new int[3];
+    private List<int> cellEatenType = new List<int>();
     //public displayFollow displayCounter;
     
     private soundPlayer soundBoard;
@@ -353,34 +354,73 @@ public class player : MonoBehaviour {
         Debug.Log("Phase 5");
         fxp.PlayOnce(8);
         int lastType = 0;
-        for (int i = 0; i < 3; i++)
+        int[] typeSorted = new int[3]; 
+        for (int i = 0; i < cellEatenType.Count; i++)
         {
-            lastType += cellEatenType[i];
+            ++typeSorted[cellEatenType[i]];       
         }
-        if (lastType == 0)
-        {
-            finalType = 0;
-        }
-        else if (lastType == 3)
+        if (typeSorted[0] > typeSorted[1] && typeSorted[0] > typeSorted[2])
         {
             finalType = 1;
-        }
-        else
-        {
-            finalType = 2;
-        }
-
-        if (finalType == 0)
-        {            
-            StartCoroutine(transform.FindChild("hallucigenia").gameObject.SetActive(true, 0.5f));
-        }
-        else if(finalType == 1)
-        {
             StartCoroutine(transform.FindChild("anomalocaris").gameObject.SetActive(true, 0.5f));
         }
-        else {
+        else if (typeSorted[1] > typeSorted[0] && typeSorted[1] > typeSorted[2])
+        {
+            finalType = 0;
+            StartCoroutine(transform.FindChild("hallucigenia").gameObject.SetActive(true, 0.5f));
+        }
+        else if (typeSorted[2] > typeSorted[0] && typeSorted[2] > typeSorted[1])
+        {
+            finalType = 2;
             StartCoroutine(transform.FindChild("nectocaris").gameObject.SetActive(true, 0.5f));
         }
+        //Randomize if a tie
+        else if (typeSorted[0] == typeSorted[1] && typeSorted[0] > typeSorted[2])
+        {
+            if (Random.Range(0, 2) == 0)
+            {
+                finalType = 1;
+                StartCoroutine(transform.FindChild("anomalocaris").gameObject.SetActive(true, 0.5f));
+            }
+            else
+            {
+                finalType = 0;
+                StartCoroutine(transform.FindChild("hallucigenia").gameObject.SetActive(true, 0.5f));
+            }
+        }
+        else if (typeSorted[0] == typeSorted[2] && typeSorted[0] > typeSorted[1])
+        {
+            if (Random.Range(0, 2) == 0)
+            {
+                finalType = 1;
+                StartCoroutine(transform.FindChild("anomalocaris").gameObject.SetActive(true, 0.5f));
+            }
+            else
+            {
+                finalType = 2;
+                StartCoroutine(transform.FindChild("nectocaris").gameObject.SetActive(true, 0.5f));
+            }
+        }
+        else if (typeSorted[1] == typeSorted[2] && typeSorted[1] > typeSorted[0])
+        {
+            if (Random.Range(0, 2) == 0)
+            {
+                finalType = 0;
+                StartCoroutine(transform.FindChild("hallucigenia").gameObject.SetActive(true, 0.5f));
+            }
+            else
+            {
+                finalType = 2;
+                StartCoroutine(transform.FindChild("nectocaris").gameObject.SetActive(true, 0.5f));
+            }
+        }
+        else//Catch all in case
+        {
+            finalType = 2;
+            StartCoroutine(transform.FindChild("nectocaris").gameObject.SetActive(true, 0.5f));
+        }
+
+
 
         StartCoroutine(transform.FindChild("planaria_B").gameObject.SetActive(false, 0.5f));
 
@@ -409,7 +449,7 @@ public class player : MonoBehaviour {
             }
             
             int cellType = other.transform.parent.GetComponent<cell_AI>().type;
-            cellEatenType[cellCollected] = cellType;
+            cellEatenType.Add( cellType);
             cellCollected++;
             //displayCounter.SetCounter(cellCollected - 1, cellType+1);
             //displayCounter.Activate();
@@ -447,6 +487,7 @@ public class player : MonoBehaviour {
 
     public void EndGameCinematic()
     {
+        
         myMate.GetComponent<mate_AI>().isGameOver = true;
         gc.StartTrackingMate(false);
         gc.SetBar(true, true, 40f);
@@ -456,6 +497,7 @@ public class player : MonoBehaviour {
     IEnumerator DelayBeforeReset()
     {
         yield return new WaitForSeconds(10f);
+        soundBoard.FadeMusic(delayAfterGameover);
         gc.GameOver();
         isGameover = true;
         StartCoroutine(LoadMenu());

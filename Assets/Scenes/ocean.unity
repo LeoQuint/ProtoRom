@@ -11186,6 +11186,7 @@ MonoBehaviour:
   wildLife_Prefab_3: {fileID: 1000011075970456, guid: defc9d4353124fe4ca7afeb18aa8b9af,
     type: 2}
   totalNumOfWildlifePerType: 10
+  quotePlayer: {fileID: 1827284413}
   lookVec: {x: 0, y: 0, z: 1}
 --- !u!4 &939990971
 Transform:
@@ -17887,6 +17888,7 @@ RectTransform:
   - {fileID: 1526463431}
   - {fileID: 490307044}
   - {fileID: 619538192}
+  - {fileID: 1827284410}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_AnchorMin: {x: 0, y: 0}
@@ -18768,7 +18770,7 @@ Prefab:
     - target: {fileID: 114000012325604620, guid: 63855620c38b3404880916b060e58b5a,
         type: 2}
       propertyPath: cellRequired
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63855620c38b3404880916b060e58b5a, type: 2}
@@ -19676,6 +19678,98 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013808647648, guid: 29ed961b32ab711439a26a17855d402c,
     type: 2}
   m_PrefabInternal: {fileID: 1803594371}
+--- !u!1 &1827284409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1827284410}
+  - 222: {fileID: 1827284412}
+  - 114: {fileID: 1827284411}
+  - 114: {fileID: 1827284413}
+  m_Layer: 5
+  m_Name: txt_quote
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1827284410
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827284409}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1621230354}
+  m_RootOrder: 9
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 600, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1827284411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827284409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8e1c143ada6fe8b4497a3e826b086c0a, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You are now a prokaryote cell. NEWLINE 1.2billion years BC.
+--- !u!222 &1827284412
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827284409}
+--- !u!114 &1827284413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827284409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0abb3958fd04e24aa0e310e8627423b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quotes:
+  - Go out and play more kids
+  - Chiken Nuggets arent vegetables
+  - Your dog doesnt eat homeworks
+  fadeInSpeed: 5
+  isFadingIn: 0
 --- !u!4 &1829920564 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011270198270, guid: c90203f1126ca63478d3d80dadebfdac,

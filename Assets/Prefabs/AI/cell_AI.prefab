@@ -455,10 +455,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colors:
-  - {r: 0.35294116, g: 1, b: 1, a: 1}
-  - {r: 1, g: 0.375, b: 0.375, a: 1}
+  - {r: 0, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9724139, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   baseMovementSpeed: 100
-  detectionRange: 4
+  detectionRange: 6
   isFleeing: 0
   type: 0
   isMate: 0

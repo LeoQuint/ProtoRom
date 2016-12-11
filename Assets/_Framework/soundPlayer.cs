@@ -10,6 +10,9 @@ public class soundPlayer : MonoBehaviour {
     public AudioClip begin;
     public AudioClip chase;
 
+
+    float musicFadeLength = 8f;
+
     void Awake()
     {
         Cursor.visible = false;
@@ -30,14 +33,20 @@ public class soundPlayer : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetMouseButtonUp(2) || Input.GetKeyDown(KeyCode.C))
+        if (Input.GetMouseButtonUp(2) || Input.GetMouseButtonUp(1))
         {
             Cursor.visible = !Cursor.visible;
+        }
+        if (isFading)
+        {
+            musicAud.volume -= Time.deltaTime / musicFadeLength;
         }
     }
 
     public void Reset()
     {
+        isFading = false;
+        musicAud.volume = 1f;
         musicAud.clip = begin;
         musicAud.Play();
     }
@@ -45,5 +54,11 @@ public class soundPlayer : MonoBehaviour {
     {
         musicAud.clip = chase;
         musicAud.Play();
+    }
+    private bool isFading = false;
+    public void FadeMusic(float delay)
+    {
+        musicFadeLength = delay;
+        isFading = true;
     }
 }

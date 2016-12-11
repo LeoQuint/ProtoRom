@@ -121,14 +121,14 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 1.3460002
+  m_TransitionDuration: 0.39065063
   m_TransitionOffset: 0
-  m_ExitTime: 0.000000004826068
+  m_ExitTime: 0.0000000028758007
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &1101000013449591672
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

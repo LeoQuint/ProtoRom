@@ -91,6 +91,9 @@ public class GameController : MonoBehaviour {
 
     private List<GameObject> wildlifeList = new List<GameObject>();
 
+    public QuotePlayer quotePlayer;
+
+
     void Awake()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera");
@@ -353,8 +356,8 @@ public class GameController : MonoBehaviour {
     }
     public void GameOver()
     {
-        Debug.Log("Game Over!");
-        //ChangeState(EvoState.GAMEOVER);        
+
+        quotePlayer.isFadingIn = true;
         fading = true;
         StartCoroutine(EndGameSequence());
     }
@@ -512,7 +515,10 @@ public class GameController : MonoBehaviour {
     {
         yield return new WaitForSeconds(3f);
         fading = true;
+        
     }
+
+
    
 
 }
