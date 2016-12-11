@@ -425,6 +425,7 @@ public class GameController : MonoBehaviour {
     }
     public void SetBar(bool status, bool fovChange, float valFOV)
     {
+        mateTraker.SetActive(false);
         //barloadTimer = Time.time + barLoadTime;
         barloadTimer = 0f;
         barLoading = true;

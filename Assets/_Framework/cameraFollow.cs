@@ -11,13 +11,20 @@ public class cameraFollow : MonoBehaviour {
     public float zoomOutTo = -20f;
     private bool zoomingOut = false;
 
+    //hack for late
+    private bool endGametarget = false;
+    Vector3 engameTarget = Vector3.zero;
     void Awake()
     {
         particleHolder = transform.FindChild("particleHolder");
     }
     void FixedUpdate()
     {
-        
+        if (endGametarget)
+        {
+            transform.position = Vector3.Lerp(transform.position, engameTarget, Time.deltaTime * cameraSpeed);
+            return;
+        }
         transform.position = Vector3.Lerp(transform.position, new Vector3(target.position.x, target.position.y, transform.position.z), Time.deltaTime * cameraSpeed);
         if (zoomingOut)
         {
@@ -39,6 +46,11 @@ public class cameraFollow : MonoBehaviour {
     public void ZoomOut()
     {
         zoomingOut = true;
+    }
+    public void SetNewTargetForView(Vector3 pos)
+    {
+        endGametarget = true;
+        engameTarget = pos;
     }
 
     

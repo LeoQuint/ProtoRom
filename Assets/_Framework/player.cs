@@ -90,7 +90,11 @@ public class player : MonoBehaviour {
         target = transform.position;
         rb = GetComponent<Rigidbody>();
         scanTimer = Time.time - scanCD;
-	}	
+	}
+
+    //Hack positioning variables for mates
+    bool atFinalPositions = false;
+    bool finalTrigger = false;
 	void Update () {
         inactivityTimer += Time.deltaTime;
 
@@ -102,8 +106,33 @@ public class player : MonoBehaviour {
         }
         if (isGameover)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(Vector3.down), Time.deltaTime * turnRate);
-            rb.AddForce(transform.forward * -1f * baseSwimForce * 0.8f * Time.deltaTime);
+            if (!atFinalPositions)
+            {
+                MoveMatesIntoPosition();
+            }
+            else
+            {
+                if (finalType == 0)
+                {
+                    pteAnim.SetTrigger("dance");
+                }
+                else if (finalType == 1)
+                {
+                    anoAnim.SetTrigger("dance");
+                }
+                else
+                {
+                    nectocarisAnim.SetTrigger("dance");
+                }
+                myMate.GetComponent<Animator>().SetTrigger("dance");
+                finalTrigger = true;
+            }
+            if (finalTrigger)
+            {
+                return;
+            }
+            //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(Vector3.down), Time.deltaTime * turnRate);
+            //rb.AddForce(transform.forward * -1f * baseSwimForce * 0.8f * Time.deltaTime);
             return;
         }
         if (Input.GetMouseButtonDown(0) &&  !EventSystem.current.IsPointerOverGameObject())
@@ -401,6 +430,10 @@ public class player : MonoBehaviour {
     }
     public void GameOver()
     {
+        finalPOSMate = new Vector3(transform.position.x - 10f, transform.position.y, transform.position.z);
+        finalPOSPlayer = new Vector3(transform.position.x + 10f, transform.position.y, transform.position.z);
+        
+        Camera.main.GetComponent<cameraFollow>().SetNewTargetForView(new Vector3(transform.position.x, transform.position.y, Camera.main.GetComponent<cameraFollow>().zoomOutTo));
         EndGameCinematic();
         StartCoroutine( DelayBeforeReset());
         isGameover = true;
@@ -418,6 +451,30 @@ public class player : MonoBehaviour {
         gc.GameOver();
         isGameover = true;
         StartCoroutine(LoadMenu());
+    }
+
+    //End game positionning
+    private Vector3 finalPOSPlayer;
+    private Vector3 finalPOSMate;
+    private float finalSetupPosDuration = 0f;
+    private Quaternion finalRotPlayer = Quaternion.Euler(0f, 90f, 0f);
+    private Quaternion finalRotMate = Quaternion.Euler(0f, 90f, 0f);
+
+
+    void MoveMatesIntoPosition()
+    {
+        finalSetupPosDuration += Time.deltaTime * 0.33f;
+        if (finalSetupPosDuration >= 1f)
+        {
+            atFinalPositions = true;
+            return;
+        }
+        transform.position = Vector3.Lerp(transform.position, finalPOSPlayer, finalSetupPosDuration);
+        myMate.transform.position = Vector3.Lerp(myMate.transform.position, finalPOSMate, finalSetupPosDuration);
+        transform.rotation = Quaternion.Lerp(transform.rotation, finalRotPlayer, finalSetupPosDuration);
+        myMate.transform.rotation = Quaternion.Lerp(myMate.transform.rotation, finalRotMate, finalSetupPosDuration);
+        
+
     }
     
 }
