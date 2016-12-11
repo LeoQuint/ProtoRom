@@ -276,9 +276,13 @@ public class player : MonoBehaviour {
         }
     }
 
-
+    //hack to fix scaling sound issue
+    private bool isPastLightLevel = false;
     public void Photosynthesize(float photon)
     {
+        if (isPastLightLevel) {
+            return;
+        }
         if (!playingLight)
         {
             playingLight = true;
@@ -320,6 +324,8 @@ public class player : MonoBehaviour {
     }
     void StartPhaseThree()
     {
+        isPastLightLevel = true;
+        Photosynthesize(false);
         Camera.main.GetComponent<cameraFollow>().Transition();
         fxp.PlayOnce(8);
         Debug.Log("Phase 3");

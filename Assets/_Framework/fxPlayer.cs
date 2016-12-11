@@ -21,6 +21,7 @@ public class fxPlayer : MonoBehaviour {
     bool scaling = false;
     void Update()
     {
+        Debug.Log(scaledAud.volume);
         if (scaling)
         {
             scaledAud.volume += scalingSpeed;
@@ -43,8 +44,7 @@ public class fxPlayer : MonoBehaviour {
         scaledAud.Play();
     }
     public void PlayScaling(bool ud)
-    {
-        
+    {        
         scaling = false;
     }
 
