@@ -169,8 +169,15 @@ public class mate_AI : MonoBehaviour
             Gizmos.DrawSphere(m_destinationToCheckPoint[4], 0.5f);
         }
     }
+    //quick fix for ending.
+    public bool isGameOver = false;
+
     void FixedUpdate()
     {
+        if (isGameOver)
+        {
+            return;
+        }
         if (m_IsMoving && m_currentDestination[1] < m_checkPoints.Length)
         {
             float step = 5f * Time.deltaTime;

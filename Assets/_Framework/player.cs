@@ -99,7 +99,7 @@ public class player : MonoBehaviour {
         inactivityTimer += Time.deltaTime;
 
 
-        if (inactivityTimer >= inactivityResetTime)
+        if (inactivityTimer >= inactivityResetTime && !isGameover)
         {
             soundBoard.Reset();
             SceneManager.LoadScene(0);
@@ -441,6 +441,7 @@ public class player : MonoBehaviour {
 
     public void EndGameCinematic()
     {
+        myMate.GetComponent<mate_AI>().isGameOver = true;
         gc.StartTrackingMate(false);
         gc.SetBar(true, true, 40f);
         gc.ActivateWildlife();

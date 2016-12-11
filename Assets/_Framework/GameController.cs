@@ -378,7 +378,10 @@ public class GameController : MonoBehaviour {
     {
         if (chaseTimer < Time.time)
         {
+            mateTraker.SetActive(false);
             player.GetComponent<player>().GameOver();
+            isTracking = false;
+            return;
         }
         float distanceToMate = Vector3.Distance(player.position, trackedMate.position);
         if (distanceToMate > distanceToOutOfScreenChase)
