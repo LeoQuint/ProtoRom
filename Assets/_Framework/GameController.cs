@@ -53,7 +53,7 @@ public class GameController : MonoBehaviour {
 
     public GameObject mateTraker;
     private Transform trackerArrow;
-    private Transform trackerTimer;
+    //private Transform trackerTimer;
     private Transform trackerSprite;
     private bool isTracking = false;
     private Transform trackedMate;
@@ -103,7 +103,7 @@ public class GameController : MonoBehaviour {
 
         trackerArrow = mateTraker.transform.FindChild("arrow");        
         trackerSprite = mateTraker.transform.FindChild("sprite");
-        trackerTimer = trackerSprite.FindChild("timer");
+        //trackerTimer = trackerSprite.FindChild("timer");
 
         plants = GameObject.FindGameObjectsWithTag("plant");
         for (int i = 0; i < plants.Length; i++)
@@ -390,7 +390,7 @@ public class GameController : MonoBehaviour {
         if (distanceToMate > distanceToOutOfScreenChase)
         {
             float timeRemaining = chaseTimer - Time.time;
-            if (timeRemaining < showTimerRemaining)
+            /*if (timeRemaining < showTimerRemaining)
             {
                 trackerTimer.gameObject.SetActive(true);
                 trackerTimer.GetComponent<Text>().text = timeRemaining.ToString("F0");
@@ -398,15 +398,15 @@ public class GameController : MonoBehaviour {
             else if(trackerTimer.gameObject.activeSelf)
             {
                 trackerTimer.gameObject.SetActive(false);
-            }
+            }*/
         }
         else
         {
             chaseTimer = Time.time + timerBeforeLosingMateChase;
-            if (trackerTimer.gameObject.activeSelf)
+           /* if (trackerTimer.gameObject.activeSelf)
             {
                 trackerTimer.gameObject.SetActive(false);
-            }
+            }*/
         }
 
 

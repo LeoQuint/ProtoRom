@@ -18772,6 +18772,10 @@ Prefab:
       propertyPath: cellRequired
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011346936842, guid: 63855620c38b3404880916b060e58b5a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63855620c38b3404880916b060e58b5a, type: 2}
   m_IsPrefabParent: 0
