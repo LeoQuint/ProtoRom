@@ -57,8 +57,6 @@ public class informationPanel : MonoBehaviour {
         }
     }
 
-    void Start() {
-    }
 
     // Update is called once per frame
     void Update() {
@@ -115,9 +113,11 @@ public class informationPanel : MonoBehaviour {
         {
             educationText.text = displayEducationTexts[currentTip + lastStageIndex];
         }
+        color_Education = 0f;
         isEducationFades = true;
         educationUp = true;
         m_scalingUp = true;
+        StopAllCoroutines();
     }
     public void PopUp(int index)
     {
@@ -133,18 +133,16 @@ public class informationPanel : MonoBehaviour {
             mainText.text = displayTexts[currentTip];
             educationText.text = displayEducationTexts[currentTip + lastStageIndex];
         }
-        
-     
+
+        color_Education = 0f;
         isEducationFades = true;
         educationUp = true;
         m_scalingUp = true;
+        StopAllCoroutines();
+        
     }
 
-    IEnumerator ClosingDelay()
-    {
-        yield return new WaitForSeconds(instructionStayTimer);
-        ClosePopUp();
-    }
+
 
     public void ClosePopUp()
     {
@@ -233,5 +231,9 @@ public class informationPanel : MonoBehaviour {
         isEducationFades = true;
         educationUp = false;
     }
-
+    IEnumerator ClosingDelay()
+    {
+        yield return new WaitForSeconds(instructionStayTimer);
+        ClosePopUp();
+    }
 }
