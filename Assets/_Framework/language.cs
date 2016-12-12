@@ -16,6 +16,11 @@ public class language : MonoBehaviour {
     {
         begin.SetActive(true);
         commencer.SetActive(false);
+       
+    }
+
+    void Start()
+    {
         soundPlayer.instance.SetLanguage(0);
     }
 
