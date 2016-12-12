@@ -3001,16 +3001,16 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 318960065}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_Children: []
   m_Father: {fileID: 490307044}
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 182.6}
+  m_AnchoredPosition: {x: 0, y: 250}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &318960067
@@ -3032,7 +3032,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 95b0beb5c1dccda44a2d2afb8b10e310, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5754,7 +5754,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.599981, y: 107.3}
+  m_AnchoredPosition: {x: 4.9, y: 227.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &561745624
@@ -5776,7 +5776,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b30e1074bd5936343b5dc8b2a79c7257, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93efacfb16c5de24eb29b5d5c3e31147, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11363,6 +11363,10 @@ MonoBehaviour:
   textSolidDuration: 1.5
   fxp: {fileID: 354024038}
   mateTraker: {fileID: 490307043}
+  creatureIndicator:
+  - {fileID: 21300000, guid: 27e747ad9a4134347a1bd07e992cfe2d, type: 3}
+  - {fileID: 21300000, guid: fb4127d0551e928429e2929c6a4c780a, type: 3}
+  - {fileID: 21300000, guid: 93efacfb16c5de24eb29b5d5c3e31147, type: 3}
   distanceToOutOfScreenChase: 26
   distanceToPopTracker: 16
   timerBeforeLosingMateChase: 18
@@ -20481,11 +20485,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quotes:
-  - Go out and play more kids
-  - Chiken Nuggets arent vegetables
+  - '"For small creatures such as we,  the vastness is bearable only through love."
+    NEWLINE - Carl Sagan'
+  - Good job! Thank you for playing! NEWLINE -The Proto Team
   - Your dog doesnt eat homeworks
+  quotesFrancais:
+  - 
+  - 
+  - 
   fadeInSpeed: 5
-  isFadingIn: 0
 --- !u!4 &1829920564 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011270198270, guid: c90203f1126ca63478d3d80dadebfdac,
@@ -20939,39 +20947,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_scalingSpeed: 5
   displayTexts:
-  - TAP AROUND TO MOVE NEWLINE TAP YOURSELF TO FIND FOOD
-  - GAIN ENERGY FROM SUNLIGHT
-  - TAP QUICKLY TO MULTIPLY
-  - EAT ORGANISMS TO GET STRONGER
-  - FOLLOW YOUR COMPANION
-  - "APPUYER SUR L'\xC9CRAN POUR BOUGER NEWLINE APPUYER SUR VOUS POUR TROUVER DE LA
-    NOURRITURE"
-  - "ACCUMULER DE L'\xC9NEGIE DU SOLEIL"
-  - 'APPUYER RAPIDEMENT POUR VOUS MULTIPLIER '
-  - ATTRAPER LES ORGANISMES POUR GRANDIR
-  - SUIVER VOTRE COMPANION
+  - TAP AROUND TO MOVE. NEWLINE TAP YOURSELF TO FIND FOOD.
+  - GAIN ENERGY FROM SUNLIGHT.
+  - TAP QUICKLY TO MULTIPLY.
+  - EAT ORGANISMS TO GET STRONGER.
+  - FOLLOW YOUR COMPANION.
+  - "APPUYEZ SUR L'\xC9CRAN POUR BOUGER. NEWLINE APPUYEZ SUR VOTRE PERSONNAGE POUR
+    TROUVER DE LA NOURRITURE."
+  - "ACCUMULEZ DE L'\xC9NEGIE SOLAIRE."
+  - APPUYEZ RAPIDEMENT POUR AMALGAMER VOTRE PERSONNAGE.
+  - ATTRAPEZ LES ORGANISMES POUR GRANDIR.
+  - SUIVEZ VOTRE COMPANION.
   helpButton: {fileID: 579976615}
   m_HasEatenFirstFood: 0
-  english: {fileID: 21300000, guid: b30e1074bd5936343b5dc8b2a79c7257, type: 3}
-  french: {fileID: 21300000, guid: 071b869dc3a1ca44ebb4b202f2b0f584, type: 3}
+  english: {fileID: 21300000, guid: 9f48e71e41427bf4398b37a4db85d716, type: 3}
+  french: {fileID: 21300000, guid: 690c21cafdaeb4a4eb4b2c6b7cad128f, type: 3}
   languageButton: {fileID: 2081974747}
   instructionStayTimer: 10
   educationText: {fileID: 1526463432}
   displayEducationTexts:
-  - Prokaryotic Cell NEWLINE ~4 Billion Years Ago
-  - Eukaryotic Cell NEWLINE ~2 Billion Years Ago
-  - Multicellular Organism NEWLINE ~800 Million Years Ago
-  - Flatworm NEWLINE ~550 Million Years Ago
-  - 'Nectocaris Pteryx ~500 Million Years Ago '
-  - 'Anomalocaris Canadensis ~500 Million Years Ago '
-  - 'Hallucigenia Sparsa ~500 Million Years Ago '
-  - "Cellule procaryote NEWLINE il y a environ 4 milliards d\u2019ann\xE9es"
-  - "Cellule eucaryote NEWLINE il y a environ 2 milliards d\u2019ann\xE9es"
-  - "Organisme Multicellulaire NEWLINE il y a environ 800 millions d\u2019ann\xE9es"
-  - "Plathelminthes NEWLINE il y a environ 550 millions d\u2019ann\xE9es"
-  - "Nectocaris Pteryx NEWLINE il y a environ 500 millions d\u2019ann\xE9es"
-  - "Anomalocaris Canadensis NEWLINE il y a environ 500 millions d\u2019ann\xE9es"
-  - "Hallucigenia Sparsa NEWLINE il y a environ 500 millions d\u2019ann\xE9es"
+  - Prokaryotic cell NEWLINE ~4 billion years ago.
+  - Eukaryotic cell NEWLINE ~2 billion years ago.
+  - Multicellular organism NEWLINE ~800 million years ago.
+  - Flatworm NEWLINE ~550 million years ago.
+  - Nectocaris pteryx NEWLINE ~500 million years ago.
+  - Anomalocaris canadensis NEWLINE ~500 million years ago.
+  - Hallucigenia sparsa NEWLINE ~500 Million years ago.
+  - "Cellule procaryote NEWLINE Il y a environ 4 milliards d\u2019ann\xE9es."
+  - "Cellule eucaryote NEWLINE Il y a environ 2 milliards d\u2019ann\xE9es."
+  - "Organisme multicellulaire NEWLINE Il y a environ 800 millions d\u2019ann\xE9es."
+  - "Plathelminthes NEWLINE Il y a environ 550 millions d\u2019ann\xE9es."
+  - "Nectocaris pteryx NEWLINE Il y a environ 500 millions d\u2019ann\xE9es."
+  - "Anomalocaris canadensis NEWLINE Il y a environ 500 millions d\u2019ann\xE9es."
+  - "Hallucigenia sparsa NEWLINE Il y a environ 500 millions d\u2019ann\xE9es."
   educationTextDisplayTime: 8
   educationTextFadeSpeed: 2
 --- !u!1001 &1894489262
@@ -23297,7 +23305,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b30e1074bd5936343b5dc8b2a79c7257, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 690c21cafdaeb4a4eb4b2c6b7cad128f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

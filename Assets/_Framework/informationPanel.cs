@@ -35,6 +35,7 @@ public class informationPanel : MonoBehaviour {
     private int currentTip = 0;
 
 
+
     void Awake()
     {
         mainText = transform.FindChild("Text").GetComponent<Text>();
@@ -42,7 +43,13 @@ public class informationPanel : MonoBehaviour {
         Debug.Log(transform.position);
         startingX = transform.position.x;
         educationText.color = Vector4.zero;
+
         MakeNewlines();
+        //Check for the language from the menu screen
+        if (soundPlayer.Language != 0)
+        {
+            SwitchLanguage();
+        }
     }
 
     void MakeNewlines()

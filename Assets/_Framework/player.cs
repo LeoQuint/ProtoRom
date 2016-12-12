@@ -344,7 +344,7 @@ public class player : MonoBehaviour {
         fxp.PlayOnce(8);
         Debug.Log("Phase 4");
         gc.ChangeState(EvoState.PLANARIAN);
-        transform.localScale = Vector3.one * 3f;
+        transform.localScale = Vector3.one * 2f;
         StartCoroutine(transform.FindChild("Cluster").gameObject.SetActive(false, 0.5f));
         StartCoroutine(transform.FindChild("planaria_B").gameObject.SetActive(true, 0.5f));
     }

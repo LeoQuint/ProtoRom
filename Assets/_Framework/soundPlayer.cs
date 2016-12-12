@@ -10,8 +10,14 @@ public class soundPlayer : MonoBehaviour {
     public AudioClip begin;
     public AudioClip chase;
 
+    public static int Language = 0;
 
     float musicFadeLength = 8f;
+    public void SetLanguage(int l)
+    {
+        Language = l;
+    }
+
 
     void Awake()
     {

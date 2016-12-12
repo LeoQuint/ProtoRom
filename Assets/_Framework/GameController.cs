@@ -53,6 +53,7 @@ public class GameController : MonoBehaviour {
 
     public GameObject mateTraker;
     private Transform trackerArrow;
+    public Sprite[] creatureIndicator;
     //private Transform trackerTimer;
     private Transform trackerSprite;
     private bool isTracking = false;
@@ -103,6 +104,7 @@ public class GameController : MonoBehaviour {
 
         trackerArrow = mateTraker.transform.FindChild("arrow");        
         trackerSprite = mateTraker.transform.FindChild("sprite");
+        trackerSprite.GetComponent<Image>().sprite = creatureIndicator[0];
         //trackerTimer = trackerSprite.FindChild("timer");
 
         plants = GameObject.FindGameObjectsWithTag("plant");
@@ -183,6 +185,7 @@ public class GameController : MonoBehaviour {
                         player.GetComponent<player>().SetMate(m);
                         m.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
                         trackedMate = m.transform;
+                        trackerSprite.GetComponent<Image>().sprite = creatureIndicator[0];
                         StartTrackingMate(true);
                         infoPanel.SetLastPhaseIndex(2);
                         break;
@@ -191,6 +194,7 @@ public class GameController : MonoBehaviour {
                         player.GetComponent<player>().SetMate(m1);
                         m1.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
                         trackedMate = m1.transform;
+                        trackerSprite.GetComponent<Image>().sprite = creatureIndicator[1];
                         StartTrackingMate(true);
                         infoPanel.SetLastPhaseIndex(1);
                         break;
@@ -199,6 +203,7 @@ public class GameController : MonoBehaviour {
                         player.GetComponent<player>().SetMate(m2);
                         m2.GetComponent<mate_AI>().SetReferences(player, m_worldLimits);
                         trackedMate = m2.transform;
+                        trackerSprite.GetComponent<Image>().sprite = creatureIndicator[2];
                         StartTrackingMate(true);
                         infoPanel.SetLastPhaseIndex(0);
                         break;
@@ -357,7 +362,7 @@ public class GameController : MonoBehaviour {
     public void GameOver()
     {
 
-        quotePlayer.isFadingIn = true;
+        quotePlayer.StartQuote();
         fading = true;
         StartCoroutine(EndGameSequence());
     }
@@ -373,6 +378,7 @@ public class GameController : MonoBehaviour {
     {
         chaseTimer = Time.time + timerBeforeLosingMateChase;
         isTracking = val;
+
         mateTraker.SetActive(val);
     }
     public Vector3 lookVec = Vector3.forward;

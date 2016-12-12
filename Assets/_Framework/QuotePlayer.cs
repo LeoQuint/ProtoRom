@@ -8,12 +8,15 @@ public class QuotePlayer : MonoBehaviour {
     [SerializeField]
     string[] quotes;
     [SerializeField]
+    string[] quotesFrancais;
+    [SerializeField]
     float fadeInSpeed = 2f;
 
     private Text textField;
     private float m_color = 0f;
 
-    public bool isFadingIn = false;
+    private bool isFadingIn = false;
+    private int selectedQuote = 0;
 
     void Awake()
     {
@@ -26,7 +29,11 @@ public class QuotePlayer : MonoBehaviour {
         {
             quotes[i] = quotes[i].Replace("NEWLINE", "\n");
         }
-        textField.text = quotes[Random.Range(0, quotes.Length)];
+        for (int i = 0; i < quotesFrancais.Length; ++i)
+        {
+            quotesFrancais[i] = quotesFrancais[i].Replace("NEWLINE", "\n");
+        }
+        selectedQuote = Random.Range(0, quotes.Length);
     }
 	
 	// Update is called once per frame
@@ -40,8 +47,22 @@ public class QuotePlayer : MonoBehaviour {
         }
 	}
 
+    public void StartQuote()
+    {
+        isFadingIn = true;
+        if (soundPlayer.Language == 0)
+        {
+            textField.text = quotes[selectedQuote];
+        }
+        else
+        {
+            textField.text = quotesFrancais[selectedQuote];
+        }
+    }
+
     void FadeUp()
     {
+        
         m_color += Time.deltaTime / fadeInSpeed;
         if (m_color > 1f)
         {
