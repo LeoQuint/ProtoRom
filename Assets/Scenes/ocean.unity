@@ -20485,14 +20485,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quotes:
-  - '"For small creatures such as we,  the vastness is bearable only through love."
-    NEWLINE - Carl Sagan'
-  - Good job! Thank you for playing! NEWLINE -The Proto Team
-  - Your dog doesnt eat homeworks
+  - "\u201CIntelligence is based on how efficient a species became at doing the things
+    they need to survive.\u201D  NEWLINE\u2015 Charles Darwin"
+  - "\u201CA cell is regarded as the true biological atom.\u201D NEWLINE \u2015 George
+    Henry Lewes"
+  - "\u201CAny living cell carries with it the experience of a billion years of experimentation
+    by its ancestors.\u201D NEWLINE\u2015 Max Ludwig Henning Delbr\xFCck"
   quotesFrancais:
-  - 
-  - 
-  - 
+  - "\u201CL\u2019intelligence se base sur l\u2019efficacit\xE9 des esp\xE8ces \xE0
+    faire les choses requises afin de survivre.\u201D NEWLINE\u2015 Charles Darwin"
+  - "\u201CUne cellule est consid\xE9r\xE9e comme un r\xE9el atome biologique.\u201DNEWLINE
+    \u2015 George Henry Lewes"
+  - "\u201CToute cellule vivante emporte avec elle une exp\xE9rience provenant d\u2019exp\xE9rimentations
+    faites par ses anc\xEAtres pendant un milliard d\u2019ann\xE9es.\u201DNEWLINE
+    \u2015 Max Ludwig Henning Delbr\xFCck"
   fadeInSpeed: 5
 --- !u!4 &1829920564 stripped
 Transform:

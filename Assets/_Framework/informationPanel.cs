@@ -111,13 +111,15 @@ public class informationPanel : MonoBehaviour {
             return;
         }
         //helpButton.SetActive(false);
-        mainText.text = displayTexts[currentTip];
+        Debug.Log(currentTip);
         if (!m_English)
         {
             educationText.text = displayEducationTexts[currentTip + lastStageIndex + 2 + 5];
+            mainText.text = displayTexts[currentTip + lastStageIndex + 5];
         }
         else
         {
+            mainText.text = displayTexts[currentTip];
             educationText.text = displayEducationTexts[currentTip + lastStageIndex];
         }
         color_Education = 0f;
@@ -130,6 +132,7 @@ public class informationPanel : MonoBehaviour {
     {
         
         currentTip = index;
+
         if (!m_English)
         {
             mainText.text = displayTexts[currentTip + 5];
