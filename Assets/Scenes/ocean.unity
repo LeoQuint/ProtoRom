@@ -3580,8 +3580,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3229bd2d270f30f409227dfdabd2dc57, type: 3}
   - {fileID: 8300000, guid: 9cd08878c1ed8e94c95190072f64d305, type: 3}
   - {fileID: 8300000, guid: 79634a4fd15da6d44b355f58622ce829, type: 3}
-  - {fileID: 8300000, guid: 6fd24d6ea4fd5574497746e812ef6771, type: 3}
-  - {fileID: 8300000, guid: b8dc7bc24ad706d419cf62731302c220, type: 3}
+  - {fileID: 8300000, guid: 6f534a14b19aca24889c85b9b66c55ff, type: 3}
+  - {fileID: 8300000, guid: 130aa9f0aba317947b0b4d5eb531b017, type: 3}
   scalingSpeed: 0.01
 --- !u!4 &362007400 stripped
 Transform:

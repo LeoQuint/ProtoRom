@@ -106,6 +106,7 @@ public class informationPanel : MonoBehaviour {
     }
     public void PopUp()
     {
+        StopAllCoroutines();
         if (m_scalingUp || m_scalingDown) {
 
             return;
@@ -126,7 +127,7 @@ public class informationPanel : MonoBehaviour {
         isEducationFades = true;
         educationUp = true;
         m_scalingUp = true;
-        StopAllCoroutines();
+        
     }
     public void PopUp(int index)
     {
