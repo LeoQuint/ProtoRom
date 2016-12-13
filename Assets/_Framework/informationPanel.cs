@@ -170,6 +170,7 @@ public class informationPanel : MonoBehaviour {
         m_English = !m_English;
         if (!m_English)
         {
+            soundPlayer.Language = 1;
             languageButton.sprite = english;
             //currentTip += 5;
             mainText.text = displayTexts[currentTip + 5];
@@ -186,6 +187,7 @@ public class informationPanel : MonoBehaviour {
         }
         else
         {
+            soundPlayer.Language = 0;
             languageButton.sprite = french;
             //currentTip -= 5;
             mainText.text = displayTexts[currentTip];
